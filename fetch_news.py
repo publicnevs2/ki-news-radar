@@ -55,7 +55,7 @@ RSS_FEEDS = {
     # Deutsche News
     "Heise (Thema KI)": {"url": "https://www.heise.de/thema/kuenstliche-intelligenz/rss.xml", "type": "article"},
     "t3n (Thema KI)": {"url": "https://t3n.de/tag/ki/rss", "type": "article"},
-    "ZEIT ONLINE (Digital)": {"url": "https://newsfeed.zeit.de/digital/index", "type": "article"}
+    "ZEIT ONLINE (Digital)": {"url": "https://newsfeed.zeit.de/digital/index", "type": "article"}   
 }
 
 # Der Prompt für Gemini, der eine JSON-Antwort erzwingt
