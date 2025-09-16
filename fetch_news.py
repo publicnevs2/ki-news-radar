@@ -3,19 +3,16 @@ import json
 import feedparser
 import google.generativeai as genai
 from dotenv import load_dotenv
-from datetime import datetime, timedelta
+from datetime import datetime
 import time
 
-# Lade den API-Key aus der .env Datei für lokale Tests
-load_dotenv()
-
 # --- Konfiguration ---
+load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 
-PROCESSED_LINKS_FILE = "processed_links.json"
+DATA_FILE = "data.json"
 
-# Deine Quellenliste, jetzt mit 'type'
 RSS_FEEDS = {
     # Deutsche Podcasts
     "Heise KI Update": {"url": "https://kiupdate.podigee.io/feed/mp3", "type": "podcast"},
@@ -36,15 +33,10 @@ RSS_FEEDS = {
     "ZEIT ONLINE (Digital)": {"url": "https://newsfeed.zeit.de/digital/index", "type": "article"}
 }
 
-
-# NEU: Der verbesserte Prompt, der JSON als Antwort erzwingt
-PROMPT = """Analysiere den folgenden Inhalt. Unabhängig von der Originalsprache, gib deine Antwort als valides JSON-Objekt zurück.
-Das JSON-Objekt muss exakt die folgende Struktur haben:
-{
-  "summary_de": "Eine prägnante Zusammenfassung des Inhalts in maximal zwei deutschen Sätzen.",
-  "topics": ["ein_thema", "zweites_thema", "drittes_thema"]
-}
-Die "topics" sollen die 3 relevantesten Schlagworte oder Konzepte des Inhalts als einzelne, kleingeschriebene Strings ohne Sonderzeichen enthalten.
+PROMPT = """Analysiere den folgenden Inhalt und gib eine JSON-Antwort mit zwei Schlüsseln zurück: "summary" und "topics".
+- "summary": Fasse den Inhalt in maximal zwei prägnanten Sätzen auf Deutsch zusammen. Konzentriere dich auf das wichtigste Ergebnis oder die zentrale Nachricht.
+- "topics": Extrahiere die 3 relevantesten Schlagworte oder Themen als eine Liste von Strings.
+Der gesamte Inhalt, den du zurückgibst, MUSS valides JSON sein.
 
 Inhalt:
 ---
@@ -52,144 +44,116 @@ Inhalt:
 ---
 """
 
-def load_processed_links():
-    """Lädt die Liste der bereits verarbeiteten Links."""
-    if not os.path.exists(PROCESSED_LINKS_FILE):
-        return set()
+def get_existing_data():
+    """Lädt bestehende Daten aus data.json, falls vorhanden."""
+    if not os.path.exists(DATA_FILE):
+        return [], set()
     try:
-        with open(PROCESSED_LINKS_FILE, "r") as f:
-            return set(json.load(f))
-    except json.JSONDecodeError:
-        return set()
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            existing_articles = json.load(f)
+            existing_links = {article['link'] for article in existing_articles}
+            return existing_articles, existing_links
+    except (json.JSONDecodeError, FileNotFoundError):
+        return [], set()
 
-def save_processed_links(links):
-    """Speichert die aktualisierte Liste der verarbeiteten Links."""
-    with open(PROCESSED_LINKS_FILE, "w") as f:
-        json.dump(list(links), f)
-
-def get_new_entries(processed_links):
-    """Sammelt nur die neuen Einträge aus allen RSS-Feeds."""
+def get_new_entries(existing_links):
+    """Sammelt nur die neuen, noch nicht verarbeiteten Einträge."""
     new_entries = []
-    # Wir schauen uns Einträge der letzten 2 Tage an, um nichts zu verpassen
-    two_days_ago = datetime.now() - timedelta(days=2)
     print("Starte das Abrufen der Feeds auf neue Einträge...")
 
     for name, feed_info in RSS_FEEDS.items():
-        url = feed_info["url"]
-        entry_type = feed_info["type"]
         try:
-            feed = feedparser.parse(url)
+            feed = feedparser.parse(feed_info['url'])
             for entry in feed.entries:
-                if entry.link not in processed_links:
-                    published_time = entry.get('published_parsed')
-                    if published_time:
-                        published_dt = datetime(*published_time[:6])
-                        if published_dt > two_days_ago:
-                            content = entry.get('summary', entry.get('content', [{'value': ''}])[0]['value'])
-                            import re
-                            clean_content = re.sub('<[^<]+?>', '', content)
+                if entry.link and entry.link not in existing_links:
+                    content = entry.get('summary', entry.get('content', [{'value': ''}])[0]['value'])
+                    import re
+                    clean_content = re.sub('<[^<]+?>', '', content)
+                    
+                    published_parsed = entry.get('published_parsed')
+                    if published_parsed:
+                        published_dt = datetime.fromtimestamp(time.mktime(published_parsed))
+                        published_iso = published_dt.isoformat()
+                    else:
+                        published_iso = datetime.now().isoformat()
 
-                            new_entries.append({
-                                "source": name,
-                                "title": entry.title,
-                                "link": entry.link,
-                                "published": entry.get('published', 'N/A'),
-                                "content_raw": clean_content[:3000], # Etwas mehr Kontext für bessere Themen
-                                "type": entry_type
-                            })
-                            print(f"-> Neuer Eintrag gefunden: '{entry.title}' von '{name}'")
+                    # NEU: Suche nach der direkten Audio-URL für Podcasts
+                    audio_url = ""
+                    if feed_info['type'] == 'podcast' and 'enclosures' in entry:
+                        for enclosure in entry.enclosures:
+                            if 'audio' in enclosure.get('type', ''):
+                                audio_url = enclosure.href
+                                break
+                    
+                    new_entries.append({
+                        "source": name,
+                        "type": feed_info['type'],
+                        "title": entry.title,
+                        "link": entry.link,
+                        "published": published_iso,
+                        "content_raw": clean_content[:4000],
+                        "audio_url": audio_url  # Füge die gefundene URL hinzu
+                    })
+                    existing_links.add(entry.link)
         except Exception as e:
             print(f"Fehler beim Abrufen von Feed {name}: {e}")
     
+    print(f"{len(new_entries)} neue Einträge gefunden.")
     return new_entries
 
 def process_with_gemini(entries):
-    """Analysiert jeden Eintrag mit Gemini, um Zusammenfassung und Themen zu extrahieren."""
+    """Verarbeitet neue Einträge mit der Gemini API."""
     if not entries:
         return []
         
-    print(f"\nStarte die Analyse von {len(entries)} neuen Einträgen mit Gemini...")
-    model = genai.GenerativeModel('gemini-1.5-flash-latest')
-    
-    generation_config = genai.types.GenerationConfig(
-        response_mime_type="application/json"
-    )
+    print(f"\nStarte die Verarbeitung von {len(entries)} neuen Einträgen mit Gemini...")
+    model = genai.GenerativeModel('gemini-1.5-flash-latest', generation_config={"response_mime_type": "application/json"})
+    processed_articles = []
 
-    processed_entries = []
     for entry in entries:
         try:
             full_prompt = PROMPT.format(entry['title'] + "\n" + entry['content_raw'])
-            response = model.generate_content(full_prompt, generation_config=generation_config)
-            
-            # Die Antwort von Gemini ist jetzt ein JSON-String, wir müssen ihn parsen
+            response = model.generate_content(full_prompt)
             response_json = json.loads(response.text)
             
-            entry['summary_ai'] = response_json.get('summary_de', 'Keine Zusammenfassung.')
-            entry['topics'] = response_json.get('topics', [])
-            
-            processed_entries.append(entry)
-            print(f"-> '{entry['title']}' erfolgreich analysiert.")
-            
+            processed_article = {
+                "source": entry["source"],
+                "title": entry["title"],
+                "link": entry["link"],
+                "published": entry["published"],
+                "type": entry["type"],
+                "audio_url": entry["audio_url"], # Stelle sicher, dass die URL weitergegeben wird
+                "summary_ai": response_json.get("summary", "Zusammenfassung konnte nicht erstellt werden."),
+                "topics": response_json.get("topics", [])
+            }
+            processed_articles.append(processed_article)
+            print(f"-> '{entry['title']}' erfolgreich verarbeitet.")
+            time.sleep(1)
         except Exception as e:
-            print(f"Fehler bei der Analyse von '{entry['title']}': {e}")
-            # Füge den Eintrag trotzdem hinzu, damit der Link als verarbeitet markiert wird
-            entry['summary_ai'] = "Analyse fehlgeschlagen."
-            entry['topics'] = []
-            processed_entries.append(entry)
-        
-        # Kleine Pause, um API-Limits nicht zu überschreiten
-        time.sleep(1)
-        
-    return processed_entries
-
-
-def update_data_file(new_data, filename="data.json"):
-    """Lädt die alte data.json, fügt neue Daten hinzu und speichert sie."""
+            print(f"Fehler bei der Verarbeitung von '{entry['title']}': {e}")
     
-    # Entferne den rohen Inhalt, der nicht in der finalen JSON-Datei sein muss
-    for item in new_data:
-        del item['content_raw']
+    return processed_articles
 
+def save_data(all_articles):
+    """Speichert die kombinierte und sortierte Liste in data.json."""
+    all_articles.sort(key=lambda x: x['published'], reverse=True)
+    
     try:
-        if os.path.exists(filename):
-            with open(filename, "r", encoding="utf-8") as f:
-                # Behandelt den Fall, dass die Datei leer oder korrupt ist
-                try:
-                    existing_data = json.load(f)
-                    if not isinstance(existing_data, list):
-                      existing_data = []
-                except json.JSONDecodeError:
-                    existing_data = []
-        else:
-            existing_data = []
-
-        # Füge die neuen Einträge am Anfang der Liste hinzu
-        updated_data = new_data + existing_data
-        
-        # Behalte nur die neuesten 100 Einträge, um die Datei klein zu halten
-        updated_data = updated_data[:100]
-
-        with open(filename, "w", encoding="utf-8") as f:
-            json.dump(updated_data, f, ensure_ascii=False, indent=4)
-            
-        print(f"\n✅ {len(new_data)} neue Einträge erfolgreich in '{filename}' hinzugefügt.")
-
+        with open(DATA_FILE, "w", encoding="utf-8") as f:
+            json.dump(all_articles, f, ensure_ascii=False, indent=4)
+        print(f"\n✅ Daten erfolgreich aktualisiert. Gesamtanzahl der Einträge: {len(all_articles)}.")
     except Exception as e:
-        print(f"Fehler beim Aktualisieren der JSON-Datei: {e}")
-
+        print(f"Fehler beim Speichern der JSON-Datei: {e}")
 
 # --- Hauptablauf ---
 if __name__ == "__main__":
-    processed_links = load_processed_links()
-    new_entries_to_process = get_new_entries(processed_links)
+    existing_articles, existing_links = get_existing_data()
+    new_entries_to_process = get_new_entries(existing_links)
     
     if new_entries_to_process:
-        analyzed_data = process_with_gemini(new_entries_to_process)
-        update_data_file(analyzed_data)
-        
-        newly_processed_links = {entry['link'] for entry in new_entries_to_process}
-        all_processed_links = processed_links.union(newly_processed_links)
-        save_processed_links(all_processed_links)
+        newly_processed_articles = process_with_gemini(new_entries_to_process)
+        combined_articles = existing_articles + newly_processed_articles
+        save_data(combined_articles)
     else:
         print("\nKeine neuen Einträge gefunden. 'data.json' wird nicht aktualisiert.")
 
