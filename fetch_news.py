@@ -46,24 +46,16 @@ RSS_FEEDS = {
     "KI>Inside": {"url": "https://anchor.fm/s/fb4ad23c/podcast/rss", "type": "podcast"},
     "Your CoPilot": {"url": "https://podcast.yourcopilot.de/feed/mp3", "type": "podcast"},
     "KI verstehen": {"url": "https://www.deutschlandfunk.de/ki-verstehen-102.xml", "type": "podcast"},
- # Englische News & Blogs
-"MIT Technology Review": {"url": "https://www.technologyreview.com/feed/", "type": "article"},
-"KDnuggets": {"url": "https://www.kdnuggets.com/feed", "type": "article"},
-"OpenAI Blog": {"url": "https://openai.com/blog/rss.xml", "type": "article"},
-"Google AI Blog": {"url": "https://ai.googleblog.com/feeds/posts/default?alt=rss", "type": "article"},
-"Hugging Face Blog": {"url": "https://huggingface.co/blog/feed.xml", "type": "article"},
-"DeepMind Blog": {"url": "https://deepmind.google/discover/blog/feed/basic", "type": "article"},
-"BAIR Blog (Berkeley AI Research)": {"url": "https://bair.berkeley.edu/blog/feed.xml", "type": "article"},
-"AI Trends": {"url": "https://aitrends.com/feed/", "type": "article"},
-"NVIDIA Blog (AI)": {"url": "https://blogs.nvidia.com/blog/category/ai/feed/", "type": "article"},
-"VentureBeat AI": {"url": "https://venturebeat.com/category/ai/feed/", "type": "article"},
-
-# Deutsche News
-"Heise (Thema KI)": {"url": "https://www.heise.de/thema/kuenstliche-intelligenz/rss.xml", "type": "article"},
-"t3n (Thema KI)": {"url": "https://t3n.de/tag/ki/rss", "type": "article"},
-"ZEIT ONLINE (Digital)": {"url": "https://newsfeed.zeit.de/digital/index", "type": "article"},
-"Handelsblatt KI": {"url": "https://www.handelsblatt.com/contentexport/feed/schlagworte/10026866", "type": "article"},
-"Tagesschau (Digitales)": {"url": "https://www.tagesschau.de/xml/rss2_-_thema-digitales-101.xml", "type": "article"}
+    # Englische News & Blogs
+    "MIT Technology Review": {"url": "https://www.technologyreview.com/feed/", "type": "article"},
+    "KDnuggets": {"url": "https://www.kdnuggets.com/feed", "type": "article"},
+    "OpenAI Blog": {"url": "https://openai.com/blog/rss.xml", "type": "article"},
+    "Google AI Blog": {"url": "https://ai.googleblog.com/feeds/posts/default?alt=rss", "type": "article"},
+    "Hugging Face Blog": {"url": "https://huggingface.co/blog/feed.xml", "type": "article"},
+    # Deutsche News
+    "Heise (Thema KI)": {"url": "https://www.heise.de/thema/kuenstliche-intelligenz/rss.xml", "type": "article"},
+    "t3n (Thema KI)": {"url": "https://t3n.de/tag/ki/rss", "type": "article"},
+    "ZEIT ONLINE (Digital)": {"url": "https://newsfeed.zeit.de/digital/index", "type": "article"}
 }
 
 # Der Prompt für Gemini, der eine JSON-Antwort erzwingt
