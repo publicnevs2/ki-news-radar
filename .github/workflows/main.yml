@@ -1,0 +1,41 @@
+name: Fetch AI News Daily
+
+on:
+  schedule:
+    # Läuft jeden Tag um 05:00 Uhr UTC (das ist 07:00 Uhr deutscher Sommerzeit)
+    - cron: '0 5 * * *'
+  # Dieser "workflow_dispatch" erlaubt es dir, den Job manuell zu starten
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Schritt 1: Das Repository auf den Server von GitHub kopieren
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      # Schritt 2: Python in der gewünschten Version installieren
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      # Schritt 3: Die Python-Pakete installieren (feedparser, etc.)
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Schritt 4: Das Hauptskript ausführen
+      - name: Run script to fetch and summarize news
+        run: python fetch_news.py
+        env:
+          # Hier holt sich das Skript den API-Key aus dem "Geheimfach"
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      # Schritt 5: Die geänderten Dateien (data.json, etc.) automatisch speichern
+      - name: Commit and push if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "📰 Update daily news"
+          # Achtung: Wir müssen beide Dateien überwachen!
+          file_pattern: "data.json processed_links.json"
