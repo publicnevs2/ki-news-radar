@@ -11,13 +11,11 @@ from dotenv import load_dotenv
 from datetime import datetime, timezone
 
 import google.generativeai as genai
-from google.generativeai import types  # für GenerationConfig & Safety-Enums
 
 # ------------------------------------------------------------
-# 1) ENV laden & Gemini konfigurieren
+# 1) ENV laden & Gemini konfigurieren (versionsrobust)
 # ------------------------------------------------------------
 load_dotenv()
-
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 if not GEMINI_API_KEY:
@@ -26,34 +24,18 @@ if not GEMINI_API_KEY:
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-generation_config = types.GenerationConfig(
-    response_mime_type="application/json",  # wichtig: 'application/json'
-)
+GENERATION_CONFIG = {
+    "response_mime_type": "application/json",  # wichtig: 'application/json'
+}
 
-safety_settings = [
-    types.SafetySetting(
-        category=types.HarmCategory.HARM_CATEGORY_HARASSMENT,
-        threshold=types.HarmBlockThreshold.BLOCK_NONE,
-    ),
-    types.SafetySetting(
-        category=types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-        threshold=types.HarmBlockThreshold.BLOCK_NONE,
-    ),
-    types.SafetySetting(
-        category=types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
-        threshold=types.HarmBlockThreshold.BLOCK_NONE,
-    ),
-    types.SafetySetting(
-        category=types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
-        threshold=types.HarmBlockThreshold.BLOCK_NONE,
-    ),
+SAFETY_SETTINGS = [
+    {"category": "HARM_CATEGORY_HARASSMENT",        "threshold": "BLOCK_NONE"},
+    {"category": "HARM_CATEGORY_HATE_SPEECH",       "threshold": "BLOCK_NONE"},
+    {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+    {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
 ]
 
-model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash-latest",
-    generation_config=generation_config,
-    safety_settings=safety_settings,
-)
+model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
 # ------------------------------------------------------------
 # 2) Konfiguration & Feeds
@@ -108,12 +90,10 @@ Text: {content}
 # ------------------------------------------------------------
 def load_existing_data():
     """
-    Lädt die bestehende Daten-Datei, falls vorhanden, und bildet ein Dict
-    key -> item. Als Key wird 'uid' (falls vorhanden) oder Link genutzt.
+    Lädt bestehende Daten-Datei und bildet ein Dict: uid -> item.
     """
     if not os.path.exists(DATA_FILE):
         return {}
-
     try:
         with open(DATA_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -128,7 +108,7 @@ def load_existing_data():
 
 
 def _clean_html(text: str) -> str:
-    """Entfernt HTML-Tags, unescaped Entities und normalisiert Whitespace."""
+    """HTML-Tags entfernen, Entities unescapen, Whitespaces normalisieren."""
     if not text:
         return ""
     no_tags = re.sub(r"<[^>]+?>", "", text)
@@ -137,7 +117,7 @@ def _clean_html(text: str) -> str:
 
 
 def _iso_from_struct_time(st) -> str:
-    """Konvertiert feedparser struct_time nach UTC ISO 8601."""
+    """feedparser struct_time -> UTC ISO 8601."""
     if not st:
         return datetime.now(timezone.utc).isoformat()
     dt = datetime.fromtimestamp(time.mktime(st), tz=timezone.utc)
@@ -145,43 +125,33 @@ def _iso_from_struct_time(st) -> str:
 
 
 def _find_audio_url(entry) -> str:
-    """
-    Sucht eine Audio-URL in Enclosures (feedparser) oder Links mit rel='enclosure'.
-    """
-    # 1) Klassische enclosures
+    """Audio-URL aus Enclosures oder Links mit rel='enclosure' extrahieren."""
     try:
         if hasattr(entry, "enclosures"):
             for enc in entry.enclosures:
-                # enc kann ein dict oder ein Objekt sein
                 t = enc.get("type", "") if isinstance(enc, dict) else getattr(enc, "type", "")
                 href = enc.get("href", "") if isinstance(enc, dict) else getattr(enc, "href", "")
                 if "audio" in (t or "") and href:
                     return href
     except Exception:
         pass
-
-    # 2) Links mit rel='enclosure'
     try:
         for l in getattr(entry, "links", []):
             if l.get("rel") == "enclosure" and "audio" in l.get("type", ""):
                 return l.get("href", "")
     except Exception:
         pass
-
     return ""
 
 
 def _make_uid(entry) -> str:
-    """Erstellt eine stabile UID aus entry.id (falls verfügbar) sonst entry.link."""
+    """UID aus id/guid/link bilden."""
     uid = getattr(entry, "id", None) or getattr(entry, "guid", None) or getattr(entry, "link", None)
     return uid or f"no-id::{getattr(entry, 'title', '')[:50]}::{time.time()}"
 
 
 def get_new_entries(existing_keys):
-    """
-    Sammelt neue Einträge aus allen RSS-Feeds und gibt eine Liste von Roh-Einträgen zurück,
-    die anschließend via Gemini angereichert werden.
-    """
+    """Neue Einträge aus allen RSS-Feeds sammeln (roh, noch ohne KI-Anreicherung)."""
     new_entries = []
     print("Starte das Abrufen der Feeds auf neue Einträge...")
 
@@ -195,16 +165,13 @@ def get_new_entries(existing_keys):
                 if uid in existing_keys:
                     continue
 
-                # Inhalt extrahieren
                 content_field = entry.get("summary")
                 if not content_field:
                     content_field = entry.get("content", [{"value": ""}])[0].get("value", "")
                 clean_content = _clean_html(content_field)
 
-                # Audio ermitteln
                 audio_url = _find_audio_url(entry) if content_type == "podcast" else ""
 
-                # Datum in UTC ISO
                 if getattr(entry, "published_parsed", None):
                     published_iso = _iso_from_struct_time(entry.published_parsed)
                 elif getattr(entry, "updated_parsed", None):
@@ -213,12 +180,12 @@ def get_new_entries(existing_keys):
                     published_iso = datetime.now(timezone.utc).isoformat()
 
                 new_item = {
-                    "uid": uid,  # stabiler Schlüssel für Deduplizierung
+                    "uid": uid,
                     "source": name,
                     "title": entry.get("title", "").strip(),
                     "link": entry.get("link", "").strip(),
                     "published": published_iso,
-                    "content_raw": clean_content[:4000],  # Prompt-Context begrenzen
+                    "content_raw": clean_content[:4000],
                     "type": content_type,
                     "audio_url": audio_url,
                 }
@@ -231,34 +198,25 @@ def get_new_entries(existing_keys):
 
 
 def _coerce_result(obj: dict) -> dict:
-    """Validiert/normalisiert das Modell-Ergebnis und füllt Defaults."""
+    """Modell-Ergebnis validieren/normalisieren + Defaults setzen."""
     out = {
         "summary_ai": obj.get("summary_ai", "Zusammenfassung konnte nicht erstellt werden."),
         "topics": obj.get("topics", []),
         "sentiment": obj.get("sentiment", "neutral"),
     }
-
-    # Topics: Liste, genau 3 Elemente (auffüllen/trimmen)
     if not isinstance(out["topics"], list):
         out["topics"] = []
     out["topics"] = [str(t) for t in out["topics"]][:3]
     while len(out["topics"]) < 3:
         out["topics"].append("")
-
-    # Sentiment: nur erlaubte Werte
     if out["sentiment"] not in {"positiv", "neutral", "negativ"}:
         out["sentiment"] = "neutral"
-
-    # Summary trimmen
     out["summary_ai"] = str(out["summary_ai"]).strip()
     return out
 
 
 def process_with_gemini(entries):
-    """
-    Reicht Einträge an das Gemini-Modell weiter und fügt
-    summary_ai, topics, sentiment hinzu. Fällt robust auf Defaults zurück.
-    """
+    """Mit Gemini anreichern: summary_ai, topics, sentiment (robust, JSON-only)."""
     if not entries:
         return []
 
@@ -268,10 +226,14 @@ def process_with_gemini(entries):
     for entry in entries:
         try:
             full_prompt = PROMPT.format(title=entry["title"], content=entry["content_raw"])
-            resp = model.generate_content(full_prompt)
+            resp = model.generate_content(
+                full_prompt,
+                generation_config=GENERATION_CONFIG,
+                safety_settings=SAFETY_SETTINGS,
+            )
             raw = (resp.text or "").strip()
 
-            # Hartes JSON-Parsing (falls Modell doch Text um das JSON legt)
+            # JSON-Parsing (falls das Modell doch Text drumherum liefert)
             try:
                 data = json.loads(raw)
             except json.JSONDecodeError:
@@ -286,18 +248,14 @@ def process_with_gemini(entries):
         finally:
             entry.pop("content_raw", None)
             processed_entries.append(entry)
-            time.sleep(0.6)  # sanfter bzgl. Rate-Limits
+            time.sleep(0.6)  # Rate-Limits schonen
 
     return processed_entries
 
 
 def save_data(all_items):
-    """
-    Speichert alle Items in DATA_FILE, sortiert nach published (neueste zuerst).
-    """
-    # Sicherheit: published ist ISO-String; Sortierung lexikografisch funktioniert für UTC-ISO
+    """Alle Items nach published (neueste zuerst) sortiert in DATA_FILE speichern."""
     sorted_data = sorted(all_items, key=lambda x: x.get("published", ""), reverse=True)
-
     try:
         with open(DATA_FILE, "w", encoding="utf-8") as f:
             json.dump(sorted_data, f, ensure_ascii=False, indent=4)
@@ -315,14 +273,10 @@ if __name__ == "__main__":
 
     if new_entries:
         processed = process_with_gemini(new_entries)
-
-        # In bestehendes Dict einpflegen (dedupliziert über uid)
         for item in processed:
             uid = item.get("uid") or item.get("link")
             if uid:
                 existing_data[uid] = item
-
-        # Persistieren
         save_data(list(existing_data.values()))
     else:
         print("\nKeine neuen Einträge gefunden. 'data.json' wird nicht aktualisiert.")
