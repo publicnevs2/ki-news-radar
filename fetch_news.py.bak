@@ -53,10 +53,10 @@ RSS_FEEDS = {
 
     # Englische News & Blogs
     "MIT Technology Review": {"url": "https://www.technologyreview.com/feed/", "type": "article"},
-    "OpenAI Blog": {"url": "https://openai.com/blog/rss.xml", "type": "article"},
-    "Google AI Blog": {"url": "https://ai.googleblog.com/feeds/posts/default?alt=rss", "type": "article"},
+   # "OpenAI Blog": {"url": "https://openai.com/blog/rss.xml", "type": "article"},
+   # "Google AI Blog": {"url": "https://ai.googleblog.com/feeds/posts/default?alt=rss", "type": "article"},
     "AI Trends": {"url": "https://aitrends.com/feed/", "type": "article"},
-    "NVIDIA Blog (AI)": {"url": "https://blogs.nvidia.com/blog/category/ai/feed/", "type": "article"},
+   # "NVIDIA Blog (AI)": {"url": "https://blogs.nvidia.com/blog/category/ai/feed/", "type": "article"},
     
     # Deutsche News
     "Heise (Thema KI)": {"url": "https://www.heise.de/thema/kuenstliche-intelligenz/rss.xml", "type": "article"},
