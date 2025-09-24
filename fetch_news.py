@@ -15,7 +15,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 
 DATA_FILE = "data.json"
-MAX_ENTRIES_PER_RUN = 20 # Verarbeite nur 20 Einträge pro Lauf, um Timeouts und Limits zu vermeiden
+MAX_ENTRIES_PER_RUN = 40 # Verarbeite nur 20 Einträge pro Lauf, um Timeouts und Limits zu vermeiden
 
 RSS_FEEDS = {
     # Deutsche Podcasts
