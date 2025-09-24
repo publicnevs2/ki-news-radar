@@ -15,7 +15,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 
 DATA_FILE = "data.json"
-SUMMARY_FILE = "summary.json" # NEUE Datei für die Tageszusammenfassung
+SUMMARY_FILE = "summary.json"
 MAX_ENTRIES_PER_RUN = 40
 
 RSS_FEEDS = {
@@ -38,7 +38,6 @@ Inhalt:
 {}
 ---"""
 
-# NEUER Prompt für die Tageszusammenfassung
 SUMMARY_PROMPT = """Fasse die folgenden deutschen KI-Nachrichten des Tages zusammen. Erstelle eine professionelle, flüssig lesbare Zusammenfassung im Stil eines Nachrichten-Briefings für Technik-Enthusiasten. Beginne mit einer prägnanten, fesselnden Schlagzeile. Strukturiere den Text in sinnvolle Absätze. Nenne keine Quellen. Gib nur die Zusammenfassung als reinen Text zurück, ohne jegliche JSON-Formatierung oder Markdown.
 
 Nachrichten:
@@ -60,7 +59,6 @@ def save_json_file(data, filename):
             json.dump(data, f, ensure_ascii=False, indent=4)
     except IOError as e: print(f"Fehler beim Speichern von {filename}: {e}")
 
-# NEUE Funktion zum Speichern von reinem Text
 def save_text_file(data, filename):
     try:
         with open(filename, "w", encoding="utf-8") as f:
@@ -132,31 +130,23 @@ def process_with_gemini(entries):
             
     return processed_entries
 
-# NEUE Funktion zur Erstellung des Tages-Briefings
-def generate_and_save_daily_summary(articles):
-    print("\nErstelle Tageszusammenfassung...")
-    today_utc = date.today()
+# ÜBERARBEITETE Funktion zur Erstellung des Tages-Briefings
+def generate_and_save_daily_summary(newly_processed_articles):
+    print("\nErstelle Tageszusammenfassung für die neuen Einträge...")
     
-    # Filtere nur Artikel von heute
-    todays_articles = [
-        article for article in articles 
-        if datetime.fromisoformat(article['published']).date() == today_utc
-    ]
-
-    if not todays_articles:
-        print("Keine heutigen Artikel für eine Zusammenfassung gefunden.")
+    if not newly_processed_articles:
+        print("Keine neuen Artikel für eine Zusammenfassung gefunden.")
         return
 
     # Kombiniere die Titel und Zusammenfassungen für den Prompt
     content_for_summary = "\n\n".join(
-        [f"Titel: {a['title']}\nZusammenfassung: {a['summary_ai']}" for a in todays_articles]
+        [f"Titel: {a['title']}\nZusammenfassung: {a['summary_ai']}" for a in newly_processed_articles]
     )
 
     try:
         model = genai.GenerativeModel('gemini-1.5-flash-latest')
         response = model.generate_content(SUMMARY_PROMPT.format(content_for_summary))
         
-        # Speichere die reine Text-Antwort
         summary_data = {"summary_text": response.text}
         save_json_file(summary_data, SUMMARY_FILE)
         print("✅ Tägliches Briefing erfolgreich erstellt und in summary.json gespeichert.")
@@ -181,7 +171,6 @@ if __name__ == "__main__":
             save_json_file(combined_data, DATA_FILE)
             print(f"\n✅ {len(successfully_processed)} neue Einträge hinzugefügt. Gesamt: {len(combined_data)}.")
             
-            # NEUER Schritt: Tageszusammenfassung erstellen
             generate_and_save_daily_summary(successfully_processed)
         else:
             print("\nKeine neuen Einträge konnten erfolgreich verarbeitet werden.")
