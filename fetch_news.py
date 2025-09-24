@@ -30,7 +30,7 @@ RSS_FEEDS = {
     "t3n (Thema KI)": {"url": "https://t3n.de/tag/ki/rss", "type": "article"},
 }
 
-PROMPT = """Analysiere den folgenden Inhalt. Erstelle eine prägnante deutsche Zusammenfassung in maximal zwei Sätzen und extrahiere bis zu drei relevante Themen als Stichwörter.
+PROMPT = """Analysiere den folgenden Inhalt. Erstelle eine prägnante deutsche Zusammenfassung in maximal drei Sätzen und extrahiere bis zu drei relevante Themen als Stichwörter.
 Gib deine Antwort ausschließlich als valides JSON-Objekt mit den Schlüsseln "summary" (string) und "topics" (array of strings) zurück.
 
 Inhalt:
@@ -38,7 +38,7 @@ Inhalt:
 {}
 ---"""
 
-SUMMARY_PROMPT = """Fasse die folgenden deutschen KI-Nachrichten des Tages zusammen. Erstelle eine professionelle, flüssig lesbare Zusammenfassung im Stil eines Nachrichten-Briefings für Technik-Enthusiasten. Beginne mit einer prägnanten, fesselnden Schlagzeile. Strukturiere den Text in sinnvolle Absätze. Nenne keine Quellen. Gib nur die Zusammenfassung als reinen Text zurück, ohne jegliche JSON-Formatierung oder Markdown.
+SUMMARY_PROMPT = """Erstelle aus allen folgenden KI-Nachrichten einen Newsartikel. Erstelle eine professionelle, flüssig lesbare Zusammenfassung im Stil eines Nachrichten-Briefings für Technik-Enthusiasten aber nicht ITler. Beginne mit einer prägnanten, fesselnden Schlagzeile. Strukturiere den Text in sinnvolle Absätze. Nenne keine Quellen. Gib nur die Zusammenfassung als reinen Text zurück, ohne jegliche JSON-Formatierung oder Markdown.
 
 Nachrichten:
 ---
