@@ -15,7 +15,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 
 DATA_FILE = "data.json"
-MAX_ENTRIES_PER_RUN = 20 # NEU: Verarbeite nur 20 Einträge pro Lauf, um Timeouts und Limits zu vermeiden
+MAX_ENTRIES_PER_RUN = 20 # Verarbeite nur 20 Einträge pro Lauf, um Timeouts und Limits zu vermeiden
 
 RSS_FEEDS = {
     # Deutsche Podcasts
@@ -24,14 +24,9 @@ RSS_FEEDS = {
     "KI Inside": {"url": "https://agidomedia.podcaster.de/insideki.rss", "type": "podcast"},
     "KI>Inside": {"url": "https://anchor.fm/s/fb4ad23c/podcast/rss", "type": "podcast"},
     "Your CoPilot": {"url": "https://podcast.yourcopilot.de/feed/mp3", "type": "podcast"},
-    #"KI verstehen": {"url": "https://www.deutschlandfunk.de/ki-verstehen-102.xml", "type": "podcast"},
-    # Englische News & Blogs
-    #"MIT Technology Review": {"url": "https://www.technologyreview.com/feed/", "type": "article"},
-    #"KDnuggets": {"url": "https://www.kdnuggets.com/feed", "type": "article"},
     # Deutsche News
     "Heise (Thema KI)": {"url": "https://www.heise.de/thema/kuenstliche-intelligenz/rss.xml", "type": "article"},
     "t3n (Thema KI)": {"url": "https://t3n.de/tag/ki/rss", "type": "article"},
-    #"ZEIT ONLINE (Digital)": {"url": "https://newsfeed.zeit.de/digital/index", "type": "article"}
 }
 
 PROMPT = """Analysiere den folgenden Inhalt. Gib deine Antwort ausschließlich als valides JSON-Objekt zurück, ohne umschließende Markdown-Syntax. Das JSON-Objekt soll folgende Struktur haben:
@@ -88,16 +83,13 @@ def get_new_entries(processed_links):
                     })
         except Exception as e: print(f"Fehler beim Abrufen von Feed {name}: {e}")
     
-    # Sortiere alle neuen Einträge nach Datum (die neuesten zuerst)
     all_new_entries.sort(key=lambda x: x['published'], reverse=True)
-    
-    # Begrenze die Anzahl der Einträge für diesen Lauf
     limited_entries = all_new_entries[:MAX_ENTRIES_PER_RUN]
     print(f"{len(all_new_entries)} neue Einträge gefunden. Verarbeite die {len(limited_entries)} neuesten.")
     return limited_entries
 
 def process_with_gemini(entries):
-    """Verarbeitet neue Einträge mit Gemini, inklusive Pausen."""
+    """Verarbeitet neue Einträge mit Gemini, inklusive Pausen und robuster JSON-Extraktion."""
     if not entries: return []
     
     print(f"\nStarte die Verarbeitung von {len(entries)} neuen Einträgen mit Gemini...")
@@ -109,19 +101,28 @@ def process_with_gemini(entries):
             full_prompt = PROMPT.format(entry['title'] + "\n" + entry['content_raw'])
             response = model.generate_content(full_prompt)
             
-            json_data = json.loads(response.text)
-            entry['summary_ai'] = json_data.get('summary', 'Keine Zusammenfassung.')
-            entry['topics'] = json_data.get('topics', [])
-            del entry['content_raw']
-            processed_entries.append(entry)
-            print(f"-> '{entry['title']}' erfolgreich verarbeitet.")
+            # KORREKTUR: Robuste JSON-Extraktion statt blindem Parsen
+            response_text = response.text.strip()
+            # Finde den ersten '{' und den letzten '}' um sicherzustellen, dass wir nur das JSON-Objekt haben
+            start_index = response_text.find('{')
+            end_index = response_text.rfind('}')
+            
+            if start_index != -1 and end_index != -1:
+                json_str = response_text[start_index:end_index+1]
+                json_data = json.loads(json_str)
+                entry['summary_ai'] = json_data.get('summary', 'Keine Zusammenfassung.')
+                entry['topics'] = json_data.get('topics', [])
+                del entry['content_raw']
+                processed_entries.append(entry)
+                print(f"-> '{entry['title']}' erfolgreich verarbeitet.")
+            else:
+                print(f"FEHLER: Kein valides JSON in der Gemini-Antwort für '{entry['title']}' gefunden.")
 
         except Exception as e:
             print(f"FEHLER bei der Verarbeitung von '{entry['title']}': {e}")
         
         finally:
-            # NEU: Höflichkeitspause von 1 Sekunde nach JEDER Anfrage
-            time.sleep(1)
+            time.sleep(1) # Höflichkeitspause
             
     return processed_entries
 
