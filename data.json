@@ -2206,6 +2206,20 @@
     },
     {
         "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Softbank, DeepSeek, OpenAI, Jenga-KI",
+        "link": "https://kiupdate.podigee.io/400-04-02-2025",
+        "published": "2025-02-04T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1772140-m-67454fa451787cf53e48d8a3042275d5.mp3?source=feed",
+        "summary_ai": "Der Softbank-CEO sieht eine baldige Ankunft von künstlicher allgemeiner Intelligenz (AGI) in Kooperation mit OpenAI.  DeepSeek entwickelt eine neue Version seiner KI mit deutlich verbesserter Hardware.  Zusätzlich wird über eine mögliche Open-Source-Strategie bei OpenAI und über die Fähigkeiten eines KI-Roboters im Spiel Jenga berichtet.",
+        "topics": [
+            "AGI",
+            "OpenAI",
+            "KI-Hardware"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
         "title": "KI-Upate kompakt: Deep research, DeepSeek, Human Authored, Google",
         "link": "https://kiupdate.podigee.io/399-03-02-2025",
         "published": "2025-02-03T14:00:00+00:00",
@@ -2678,6 +2692,538 @@
             "OpenAI",
             "KI-Videogenerator Veo",
             "KI-Logik"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Perplexity AI, KI-Fakes, Amazon Nova, Jobmarkt",
+        "link": "https://kiupdate.podigee.io/367-04-12-2024",
+        "published": "2024-12-04T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1701152-m-b197650633389c71bb565dcf37b54324.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 04.12.2024 behandelt diverse Themen: Perplexity AI kündigt günstige Hardware an, die Auswirkungen von KI-Fakes auf Wahlen werden thematisiert und Amazon präsentiert neue KI-Grundlagenmodelle namens \"Nova\".  Der Einfluss generativer KI auf den Arbeitsmarkt wird ebenfalls diskutiert.",
+        "topics": [
+            "KI-Hardware",
+            "KI-Fakes",
+            "Generative KI und Arbeitsmarkt"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: ChatGPT, Adobe MultiFoley, Yann LeCun, GenAI in Unternehmen",
+        "link": "https://kiupdate.podigee.io/366-03-12-2024",
+        "published": "2024-12-03T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1700669-m-baee65f62f5040c245ad00127e8dca8c.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 03.12.2024 behandelt diverse Themen, darunter die Grenzen von ChatGPT, die neue Video-Vertonungsfunktion \"MultiFoley\" von Adobe und die mangelnde Vorbereitung deutscher Unternehmen auf generative KI.  Es wird auch die Frage aufgeworfen, warum Europa keine Billionen-Dollar-Unternehmen im KI-Bereich hervorgebracht hat.",
+        "topics": [
+            "ChatGPT",
+            "Generative KI",
+            "Adobe MultiFoley"
+        ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP021 - 20 Videos zum Advent und Ignite Highlights",
+        "link": "https://podcast.yourcopilot.de/episode/ycp021-20-videos-zum-advent-und-ignite-highlights",
+        "published": "2024-12-03T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/53b9eaab.mp3?t=1733229818",
+        "summary_ai": "Der Beitrag kündigt einen Livestream am 5. Dezember um 11 Uhr an, in dem die Microsoft Ignite 2024 zusammengefasst wird.  Zusätzlich werden 20 Advent-Videos und Links zu Microsoft Ignite Sessions, insbesondere zum Thema Copilot und Oversharing, bereitgestellt.",
+        "topics": [
+            "Microsoft Ignite 2024",
+            "Microsoft Copilot",
+            "Advent Videos"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: KI-Moral, Copyright-Klagen, Neurowissenschaft, Investition",
+        "link": "https://kiupdate.podigee.io/365-02-12-2024",
+        "published": "2024-12-02T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1699280-m-ddd051890492f25209b6f9b10fe735f5.mp3?source=feed",
+        "summary_ai": "Ein KI-Update vom 02.12.2024 berichtet über aktuelle Entwicklungen: KI-Systeme sollen moralische Entscheidungen vorhersagen, KI-Unternehmen sehen sich mit Copyright-Klagen konfrontiert, und KI übertrifft Neurowissenschaftler in der Forschungsprognose.  Die KI-Investitionen haben sich innerhalb eines Jahres versechsfacht.",
+        "topics": [
+            "KI-Ethik",
+            "Copyright",
+            "KI-Investitionen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Atomkraft als Lösung für den KI-Energiehunger?",
+        "link": "https://kiupdate.podigee.io/364-29-11-2024",
+        "published": "2024-11-29T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1694778-m-316ede689bc6f89f4a270711ecde97eb.mp3?source=feed",
+        "summary_ai": "Der steigende Energiebedarf durch KI stellt die Umweltversprechen großer Tech-Unternehmen in Frage.  Die Studie untersucht die Rolle kleiner Atomkraftwerke (SMR) als mögliche Lösung für die CO2-neutrale Stromversorgung von KI-Rechenzentren bis 2030. Die Realisierbarkeit dieses Ansatzes wird dabei kritisch beleuchtet.",
+        "topics": [
+            "KI-Energiebedarf",
+            "Atomkraftwerke (SMR)",
+            "Klimaneutralität"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Journalismus, xAI, Gemini-App, autonome Busse",
+        "link": "https://kiupdate.podigee.io/363-28-11-2024",
+        "published": "2024-11-28T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1694526-m-e8af350be60f60cfad792c2bd5b84926.mp3?source=feed",
+        "summary_ai": "Ein KI-Update berichtet über die Besorgnis von Medienkritikern wegen KI-Einfluss auf Verlage, xAIs geplante ChatGPT-Konkurrenz und die Verfügbarkeit der Gemini-App für Google Workspace.  Zusätzlich wird ein Testbetrieb autonomer Busse in Hamburg erwähnt.",
+        "topics": [
+            "KI im Journalismus",
+            "xAI und ChatGPT Konkurrenz",
+            "Autonomes Fahren"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Video-KI Sora, OpenGPT-X, Anthropic, KI-Ampel",
+        "link": "https://kiupdate.podigee.io/362-27-11-2024",
+        "published": "2024-11-27T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1692953-m-dd2781986857de7ee4c0e56650eb38ec.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 27. November 2024 berichtet über die kontroverse Freigabe der Video-KI Sora durch Künstler, die Veröffentlichung des europäischen KI-Sprachmodells OpenGPT-X und Anthropics Bestreben, KI-Chatbots stärker zu integrieren.  Zusätzlich wird die Problematik der KI-Ampel in Hamm thematisiert, die im Berufsverkehr ohne KI-Unterstützung auskommen soll.",
+        "topics": [
+            "Video-KI Sora",
+            "OpenGPT-X",
+            "KI-Regulierung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: KI-Verhaltenskodex, Intellect-1, Fugatto, Robo-Bus",
+        "link": "https://kiupdate.podigee.io/361-26-11-2024",
+        "published": "2024-11-26T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1691590-m-9bf20f38cae4098707043f3c6665987b.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 26. November 2024 berichtet über Vorschläge der EU für externe KI-Modelltests, das multikontinentale Training des Sprachmodells Intellect-1 und ein verlängertes Pilotprojekt für Robo-Busse in Friedrichshafen.  Zusätzlich wird die Musik- und Stimmgenerierung mittels einer neuen Nvidia KI erwähnt. ",
+        "topics": [
+            "KI-Regulierung",
+            "Sprachmodelle",
+            "Robotik"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: OpenAI, Deepmind, Manhatten Project für KI, ChatGPT-Fail",
+        "link": "https://kiupdate.podigee.io/360-25-11-2024",
+        "published": "2024-11-25T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1689965-m-5de920f5aa4ed2a20aae58339b887233.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 25. November 2024 berichtet über OpenAIs Vorstoß in den Browsermarkt, Googles Deepminds Forschung zum besseren Verständnis von KI-Systemen und einen US-Vorschlag für ein \"Manhattan-Projekt\" für KI.  Zusätzlich wird ein Fall teurer KI-Programmierung beschrieben.",
+        "topics": [
+            "OpenAI",
+            "KI-Forschung",
+            "Manhattan-Projekt für KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Urheberrecht im Zeitalter der generativen KI",
+        "link": "https://kiupdate.podigee.io/359-22-11-2024",
+        "published": "2024-11-22T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1683853-m-c535be21ae4896daf0c1c9e19a23196b.mp3?source=feed",
+        "summary_ai": "Die Studie von Dornis und Stober untersucht die rechtlichen Fragen der Nutzung von urheberrechtlich geschützten Inhalten zum Training generativer KI-Modelle.  Die  Praxis von Unternehmen wie OpenAI, die umfangreiche Datenmengen ohne vorherige Zustimmung nutzen, steht dabei im Fokus.  Die Studie beleuchtet die technologischen und juristischen Herausforderungen dieses Problems.",
+        "topics": [
+            "Urheberrecht",
+            "Generative KI",
+            "KI-Training"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Digitale Gewalt, Meta B2B, Amazon, Gemini",
+        "link": "https://kiupdate.podigee.io/358-21-11-2024",
+        "published": "2024-11-21T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1683850-m-d575362b46695e2d60763e176d49235a.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 21. November 2024 berichtet über den Anstieg digitaler Gewalt gegen Frauen, Metas neue KI-Business-Unit und die Verzögerung neuer Amazon Echo Geräte bis 2025.  Googles Gemini KI-Modell verbessert sich durch die Speicherung von Nutzervorlieben.  Die Links zu ausführlicheren Informationen sind im Originaltext enthalten.",
+        "topics": [
+            "Digitale Gewalt",
+            "KI-Business (Meta)",
+            "Gemini"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Ignite, Lernprozess von KI, Pflanzen-Robo, Amazons Rufus",
+        "link": "https://kiupdate.podigee.io/357-20-11-2024",
+        "published": "2024-11-20T13:30:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1683745-m-eb66f5e0aa27f6189d7f903f316ef1fc.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 20. November 2024 behandelt Microsofts Vision der neuen Arbeitswelt, die Fähigkeiten von KI-Systemen über reine Prompt-Eingaben hinaus und einen Roboter, der Pflanzen durch Berührung identifizieren kann.  Zusätzlich wird Amazons KI-Shopping-Assistent erwähnt. ",
+        "topics": [
+            "KI im Arbeitsleben",
+            "KI-Fähigkeiten",
+            "Robotertechnologie"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Dotdash Meredith, Mistral AI, Visual Effects, Metas Ray-Bans",
+        "link": "https://kiupdate.podigee.io/356-19-11-2024",
+        "published": "2024-11-19T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1679734-m-dde44b5007838aacf5c289f310227d28.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 19. November 2024 berichtet über OpenAIs Dateneinkauf bei Dotdash Meredith, Mistral AIs neue KI-Assistent-Funktionen und ein neues Modell sowie den Einfluss von KI auf die Visual-Effects-Branche und die europäische Markteinführung von KI-Funktionen für Metas Ray-Ban Brillen.",
+        "topics": [
+            "KI-Modelle",
+            "Datenlizenzen",
+            "Visual Effects"
+        ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP020 - Ignite Vorschau - meine 7 Highlight Sessions",
+        "link": "https://podcast.yourcopilot.de/episode/ycp020-ignite-vorschau-meine-7-highlight-sessions",
+        "published": "2024-11-18T14:15:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/d59d9ae5.mp3?t=1731938193",
+        "summary_ai": "Die Microsoft Ignite 2024 bietet Sessions zu Copilot Studio, Agenten und Content Management.  Besonders hervorgehoben werden Copilot Agenten, autonome Agenten, Copilot Pages und Microsoft Loop.  Der Fokus liegt auf den Möglichkeiten von KI-gestützten Tools.",
+        "topics": [
+            "Microsoft Ignite 2024",
+            "Copilot",
+            "KI-gestützte Tools"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Verhaltenskodex, Drohenabwehr, KI-Politik, Lernmaterial",
+        "link": "https://kiupdate.podigee.io/355-18-11-2024",
+        "published": "2024-11-18T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1678092-m-24424a312b2fc6574a80a046fed95355.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 18. November 2024 befasst sich mit strengen Sicherheits- und Copyright-Regeln für KI, einem KI-gestützten Waffensystem zur Drohnenabwehr und dem deutschen Misstrauen gegenüber der KI-Politik.  Zusätzlich werden kostenlose Lernmaterialien angeboten. Die Themen reichen von ethischen Aspekten bis hin zu militärischen Anwendungen und gesellschaftlicher Akzeptanz.",
+        "topics": [
+            "KI-Sicherheit",
+            "Drohnenabwehr",
+            "KI-Politik"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: KI im Klassenzimmer",
+        "link": "https://kiupdate.podigee.io/354-15-11-2024",
+        "published": "2024-11-15T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1671531-m-b317066bc77e220ade5f8338e6a43e6b.mp3?source=feed",
+        "summary_ai": "Der Studienrat Sven Kaufmann berichtet über den Einsatz von KI im Unterricht, sowohl in der Vorbereitung als auch direkt im Unterricht. Er beschreibt den Umgang mit den Herausforderungen der KI und hebt neue Lernmöglichkeiten für Schüler hervor.  Kaufmanns Buch \"KI: Fortgeschrittenes Prompting für Lehrkräfte\" bietet weitere Einblicke in die Thematik.",
+        "topics": [
+            "KI im Unterricht",
+            "Einsatz von KI in der Schule",
+            "Herausforderungen durch KI im Bildungssystem"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Brockman, GEMA-Klage, KI-Agent \"Operator\", DeepL Voice",
+        "link": "https://kiupdate.podigee.io/353-14-11-2024",
+        "published": "2024-11-14T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1671527-m-5e932f0c92819ab3b3b58e4681364112.mp3?source=feed",
+        "summary_ai": "Greg Brockman übernimmt erneut die Führung bei OpenAI.  Die GEMA hat OpenAI wegen Urheberrechtsverletzungen verklagt.  Zudem plant OpenAI den Start des KI-Agenten \"Operator\" und DeepL bietet neue Live-Untertitel an.",
+        "topics": [
+            "OpenAI",
+            "KI-Agenten",
+            "Urheberrechtsverletzung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Anthropic's Claude Opus, OpenAI's o1, Learn About, GEMA",
+        "link": "https://kiupdate.podigee.io/352-13-11-2024",
+        "published": "2024-11-13T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1671368-m-9ab82d3d58efeef6ab63643775fa5b05.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 13. November 2024 berichtet über die Verschiebung des Anthropic-Updates von Claude Opus, OpenAIs geplante o1-Einführung noch in diesem Jahr und den Start von Googles Lern-KI \"Learn About\".  Zusätzlich wird die KI-Charta der GEMA erwähnt.  Die Links im Artikel führen zu weiteren Informationen zu diesen Themen.",
+        "topics": [
+            "Anthropic Claude Opus",
+            "OpenAI o1",
+            "KI-Charta GEMA"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: FrontierMath, Alphafold 3, Mac-Mini, Schmerzerkennung",
+        "link": "https://kiupdate.podigee.io/351-12-11-2024",
+        "published": "2024-11-12T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1669834-m-05a6c05ca1a681fed061b9f7c5401415.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 12. November 2024 berichtet über neue Entwicklungen im Bereich der KI: einen neuen KI-Mathe-Benchmark (FrontierMath), die Veröffentlichung von Alphafold 3 für wissenschaftliche Zwecke und die lokale Nutzung von LLMs auf Mac Minis.  Zusätzlich wird ein KI-System vorgestellt, das Schmerzen bei Ziegen erkennt.",
+        "topics": [
+            "KI-Benchmark",
+            "Alphafold 3",
+            "Schmerzerkennung"
+        ]
+    },
+    {
+        "source": "KI>Inside",
+        "title": "KI trifft Logik: Wie neurosymbolische KI alles verändert",
+        "link": "https://podcasters.spotify.com/pod/show/leftshift-one/episodes/KI-trifft-Logik-Wie-neurosymbolische-KI-alles-verndert-e2qkgjl",
+        "published": "2024-11-12T08:42:55+00:00",
+        "type": "podcast",
+        "audio_url": "https://anchor.fm/s/fb4ad23c/podcast/play/94044213/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-10-6%2F389346179-44100-2-bfe9d8c7e1522.mp3",
+        "summary_ai": "Der Podcast KI>Inside diskutiert neurosymbolische KI und ihre Anwendung in der Software 3.0.  Marius Konstantin Dinu von Extensity AI erläutert, wie diese Technologie logisches Denken und Machine Learning verbindet, um dynamische, anpassungsfähige Programme zu schaffen.  Unternehmen profitieren von automatisierten Workflows und beschleunigter Innovation durch KI-gestützte Prozesse.",
+        "topics": [
+            "Neurosymbolische KI",
+            "Software 3.0",
+            "KI in Unternehmen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: OpenAIs Orion, Anthropic, Physical Intelligence, Robotik",
+        "link": "https://kiupdate.podigee.io/350-11-11-2024",
+        "published": "2024-11-11T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1668502-m-dc2975f7011fdce966545e6e251ae257.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 11. November 2024 berichtet über Grenzen von OpenAIs neuem Modell \"Orion\", Amazons geplante Milliardeninvestition in Anthropic und Jeff Bezos' Millioneninvestition in physische Intelligenz und Robotik. Ein Roboter lernt durch Vorführung Putzen.",
+        "topics": [
+            "OpenAI Orion",
+            "Anthropic Investition",
+            "Physische Intelligenz und Robotik"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Was versteht KI?",
+        "link": "https://kiupdate.podigee.io/349-08-11-2024",
+        "published": "2024-11-08T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1664007-m-10edceff63c3ebb30a526365fbaf7d1b.mp3?source=feed",
+        "summary_ai": "Der Artikel beschreibt den aktuellen KI-Boom, insbesondere Fortschritte in der Verarbeitung natürlicher Sprache durch große Sprachmodelle.  Er betont den Unterschied zwischen menschlichem und maschinellem Sprachverständnis und erklärt, wie trotz dieser Unterschiede Kommunikation möglich ist.  Zusätzliche Informationen zu Veranstaltungen und Ressourcen zum Thema KI werden bereitgestellt.",
+        "topics": [
+            "KI",
+            "Sprachverarbeitung",
+            "Maschinelles Lernen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: US-Wahlen, Deepfake-Detektor, Predicted Outputs, KI-Rettungssystem",
+        "link": "https://kiupdate.podigee.io/348-07-11-2024",
+        "published": "2024-11-07T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1664005-m-882eeeb88bef76a1442c4c98066c5ef5.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 07. November 2024 befasst sich mit dem Einfluss von KI auf die US-Wahl, der Vorstellung eines Deepfake-Detektors von McAfee und der Nutzung von KI in Textbearbeitungstools ('Predicted Outputs') sowie in Rettungssystemen.",
+        "topics": [
+            "US-Wahl und KI",
+            "Deepfake-Detektor",
+            "KI in Rettungssystemen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Opferschutz, Llama fürs Militär, AKW, Pottwale verstehen",
+        "link": "https://kiupdate.podigee.io/347-06-11-2024",
+        "published": "2024-11-06T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1662400-m-f2dcc60deb091a2564ed50192c07fe8b.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 06. November 2024 befasst sich mit verschiedenen Aspekten der Künstlichen Intelligenz: Microsoft fordert mehr Opferschutz und Regulierung, Meta liefert seine Llama-Modelle an das US-Militär und ein Projekt zur Stromgewinnung mittels KI aus Atomkraftwerken leidet einen Rückschlag.  Darüber hinaus wird der Einsatz von KI zur Beobachtung von Pottwalen vorgestellt.",
+        "topics": [
+            "KI-Ethik und -Regulierung",
+            "Militärische Anwendung von KI",
+            "KI im Umweltschutz"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: OpenAI Hardware, Security, Oasis, KI-Radioprogramm",
+        "link": "https://kiupdate.podigee.io/346-05-11-2024",
+        "published": "2024-11-05T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1660322-m-e8574b44141133cce9761299b29059a7.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 05. November 2024 berichtet über einen Personalwechsel bei OpenAI, Fortschritte in der KI-basierten Sicherheitsforschung und die Entwicklung eines KI-Spiels, das Bilder in 3D-Welten umwandelt. Ein polnisches KI-Radioprogramm wurde hingegen nach kurzer Zeit eingestellt.",
+        "topics": [
+            "OpenAI",
+            "KI-Sicherheit",
+            "KI-Spiele"
+        ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP019 - Copilot-Welle: Alles Wichtige über Microsoft 365 Copilot vor der Ignite",
+        "link": "https://podcast.yourcopilot.de/episode/ycp019-copilot-welle-alles-wichtige-ueber-microsoft-365-copilot-vor-der-ignite",
+        "published": "2024-11-04T15:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/40fc538d.mp3?t=1730730829",
+        "summary_ai": "Der Beitrag YCP019 behandelt Microsoft 365 Copilot vor der Ignite Konferenz.  Ein Video von Markus Raatz analysiert, wie Copilot in Excel Daten verarbeitet.  Zusätzlich wird ein Microsoft Copilot Meetup in Berlin für den 14.11.2024 angekündigt.",
+        "topics": [
+            "Microsoft 365 Copilot",
+            "KI in Excel",
+            "Ignite Konferenz"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: SimpleQA, Google Suche, NotebookLlama, Claude 3.5 Sonnet",
+        "link": "https://kiupdate.podigee.io/345-04-11-2024",
+        "published": "2024-11-04T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1658689-m-a4a77658f28fb4b9ded808abf0872e0b.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 4. November 2024 umfasst neue Entwicklungen wie SimpleQA von OpenAI, die Integration der Google Suche in die Gemini-API und Metas Podcast-Generator NotebookLlama.  Claude 3.5 kann nun PDFs mit Bildern verarbeiten.  Die verschiedenen Ankündigungen zeigen die rasante Weiterentwicklung im KI-Bereich.",
+        "topics": [
+            "SimpleQA",
+            "Google Suche API",
+            "KI-Entwicklung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Snap Spectacles, Google, GPT-4o, Image Playground",
+        "link": "https://kiupdate.podigee.io/344-30-10-2024",
+        "published": "2024-10-30T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1652699-m-ef93260f8ca0cd5f072193cec65513ff.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 30. Oktober 2024 behandelt verschiedene Themen, darunter einen Test der Snap Spectacles, Googles globale KI-Sprachinitiative und die Schwächen von Sprachmodellen wie GPT-4o im Rechnen.  Zusätzlich wird Apples Bildgenerator Image Playground vorgestellt. Die nächste Folge erscheint am 4. November 2024.",
+        "topics": [
+            "KI-Sprachmodelle",
+            "Bildgeneratoren",
+            "Snap Spectacles"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: OSAID, Apple Intelligence, Australien, Vision Language Models",
+        "link": "https://kiupdate.podigee.io/343-29-10-2024",
+        "published": "2024-10-29T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1650843-m-c4b2cb799d1c984623950b97c075f3ee.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 29. Oktober 2024 behandelt die Veröffentlichung einer KI-Definition durch die Open Source Initiative, die geplante Einführung von Apple Intelligence im April 2025 in Deutschland und Tests des KI-Assistenten Microsoft 365 Copilot in Australien.  Darüber hinaus werden Schwächen von Vision Language Models in einfachen Bildtests aufgezeigt.",
+        "topics": [
+            "KI-Definition",
+            "Apple Intelligence",
+            "Vision Language Models"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: KI-Agenten, OpenAI, nationale Sicherheit, Apple Intelligence",
+        "link": "https://kiupdate.podigee.io/342-28-10-2024",
+        "published": "2024-10-28T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1649323-m-6ece801a07f580675fe333d0ece7067f.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 28. Oktober 2024 behandelt die aktuelle Entwicklung von KI-Agenten, die Auflösung des AGI-Beratungsteams bei OpenAI und die neue KI-Sicherheitsstrategie der USA.  Zusätzlich wird über interne Tests von Apple Intelligence berichtet. Die Entwicklung im Bereich der Künstlichen Intelligenz schreitet rasant voran.",
+        "topics": [
+            "KI-Agenten",
+            "nationale Sicherheit",
+            "AGI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Musik vom Fließband",
+        "link": "https://kiupdate.podigee.io/341-25-10-2024",
+        "published": "2024-10-25T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1644876-m-898d7ea8a08faed2cf2c83b3ed8b46d8.mp3?source=feed",
+        "summary_ai": "Der Deep Dive befasst sich mit dem Einfluss von KI auf die Musikbranche.  Der GEMA-Vorstandsvorsitzende Dr. Tobias Holzmüller hebt sowohl Chancen für Musiker durch KI-Tools als auch die Bedrohung ihrer Lebensgrundlage durch KI-generierte Musik hervor. Die GEMA entwickelt ein Lizenzmodell, um Künstler bei der Nutzung ihrer Werke durch KI-Systeme fair zu entlohnen.",
+        "topics": [
+            "KI in der Musik",
+            "Künstliche Intelligenz und Urheberrecht",
+            "GEMA Lizenzmodell"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: SynthID, ARM vs. Qualcomm, Differential Transformer, Kunst",
+        "link": "https://kiupdate.podigee.io/340-24-10-2024",
+        "published": "2024-10-24T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1644720-m-43b62f1b571a0ff6fcf9457a77658da9.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 24. Oktober 2024 behandelt Googles neues SynthID-Wasserzeichen für KI-Inhalte, den Lizenzstreit zwischen ARM und Qualcomm sowie die Entwicklung eines effizienteren KI-Transformers durch Microsoft.  Zusätzlich wird die Debatte um das Verbot des nicht-lizenzierten Trainings von KI-Modellen mit Kunst thematisiert.",
+        "topics": [
+            "SynthID",
+            "ARM vs. Qualcomm",
+            "KI-Transformer"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Anthropics Claude, Gesichtserkennung, NewsCorp, Canva Visual Suite",
+        "link": "https://kiupdate.podigee.io/339-23-10-2024",
+        "published": "2024-10-23T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1643312-m-6a9851dad7d99bbed35c2ba0534f6e22.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 23. Oktober 2024 berichtet über neue Entwicklungen bei Anthropics Claude (Mauszeiger-Steuerung), Metas Test von Gesichtserkennung gegen Betrug und juristische Schritte der New York Times und News Corp gegen Perplexity.  Canva integriert zudem den Bildgenerator Leonardo.",
+        "topics": [
+            "Anthropics Claude",
+            "Gesichtserkennung",
+            "KI-Recht"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: ChatGPT Advanced Voice Mode, Copilot, Ray-Ban Glasses, Google",
+        "link": "https://kiupdate.podigee.io/338-22-10-2024",
+        "published": "2024-10-22T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1641762-m-00ad896ade9068ef136fe26096016cb3.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 22. Oktober 2024 berichtet über die EU-weite Verfügbarkeit des ChatGPT Advanced Voice Mode, Microsofts erweitertem KI-Angebot für Unternehmen und den erfolgreichen Verkaufszahlen der Meta Ray-Ban Glasses.  Googles KI-Funktionen im Bereich Modeberatung werden ebenfalls erwähnt. ",
+        "topics": [
+            "ChatGPT",
+            "KI im Unternehmen",
+            "Smarte Brillen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: KI-Governance",
+        "link": "https://kiupdate.podigee.io/336-17-10-2024",
+        "published": "2024-10-18T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1636698-m-ed3f7682425c8df721f458c20453ea32.mp3?source=feed",
+        "summary_ai": "Der Beitrag behandelt das Thema KI-Governance, also die Steuerung und Kontrolle von KI-Aktivitäten in Unternehmen.  Es werden Fragen nach sicherem, ethischem und erfolgreichem KI-Einsatz sowie die Verteilung von Verantwortlichkeiten diskutiert.  Experten wie Prof. Dr. Christian Meske und Max Schreiner beleuchten diese Aspekte.",
+        "topics": [
+            "KI-Governance",
+            "ethischer KI-Einsatz",
+            "Verantwortlichkeiten KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Mistral AI, ChatGPT, F13, Thinking LLMs",
+        "link": "https://kiupdate.podigee.io/335-17-10-2024",
+        "published": "2024-10-17T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1636465-m-e2bfd62a0a890c39d9a972e16032c656.mp3?source=feed",
+        "summary_ai": "Mistral AI präsentiert einen Nachfolger seines 7B-Modells. ChatGPT verzeichnet mit über drei Milliarden monatlichen Aufrufen einen neuen Besucherrekord.  Aleph Alpha erhält einen Millionenauftrag von der Arbeitsagentur und setzt F13 bundesweit ein, während Metas Forschung an LLMs ohne aufwendige Trainingsdaten Fortschritte macht.",
+        "topics": [
+            "Mistral AI",
+            "ChatGPT",
+            "LLM Entwicklung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: NYT vs. Perplexity, KI-Chips, RTL, Intel vs. ARM",
+        "link": "https://kiupdate.podigee.io/334-16-10-2024",
+        "published": "2024-10-16T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1635175-m-2f1b4f8589e56d2634434958cf6e2f54.mp3?source=feed",
+        "summary_ai": "Die New York Times verklagt die KI-Suchmaschine Perplexity.  Die USA prüfen Exportbeschränkungen für KI-Chips in den Nahen Osten, während RTL Text-to-Video für Trailer einsetzt.  Intel unterstützt AMD im Wettbewerb gegen ARM.",
+        "topics": [
+            "KI-Recht",
+            "KI-Chips",
+            "Text-to-Video"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Tesla Optimus, Google Atomstrom, digitale Angriffe, Counter-Strike",
+        "link": "https://kiupdate.podigee.io/333-15-10-2024",
+        "published": "2024-10-15T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1633879-m-92ef902cd663dcd71c55fdd5f77525d1.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 15. Oktober 2024 berichtet über Teslas ferngesteuerte Optimus-Roboter, Googles Einsatz von Atomstrom für KI und Warnungen der Geheimdienste vor digitalen Angriffen.  Zusätzlich wurde die Simulation von Counter-Strike mittels KI erwähnt.",
+        "topics": [
+            "Tesla Optimus",
+            "KI und Energie",
+            "Digitale Sicherheit"
         ]
     }
 ]
