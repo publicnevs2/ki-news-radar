@@ -1,7 +1,7 @@
 import os
 import json
 import feedparser
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
 import re
 import time
 import google.generativeai as genai
@@ -15,7 +15,8 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 
 DATA_FILE = "data.json"
-MAX_ENTRIES_PER_RUN = 40 # Verarbeite nur 20 Einträge pro Lauf, um Timeouts und Limits zu vermeiden
+SUMMARY_FILE = "summary.json" # NEUE Datei für die Tageszusammenfassung
+MAX_ENTRIES_PER_RUN = 40
 
 RSS_FEEDS = {
     # Deutsche Podcasts
@@ -29,8 +30,6 @@ RSS_FEEDS = {
     "t3n (Thema KI)": {"url": "https://t3n.de/tag/ki/rss", "type": "article"},
 }
 
-# --- KORRIGIERTER PROMPT ---
-# Klarere, einfachere Anweisung ohne verwirrende Beispiele.
 PROMPT = """Analysiere den folgenden Inhalt. Erstelle eine prägnante deutsche Zusammenfassung in maximal zwei Sätzen und extrahiere bis zu drei relevante Themen als Stichwörter.
 Gib deine Antwort ausschließlich als valides JSON-Objekt mit den Schlüsseln "summary" (string) und "topics" (array of strings) zurück.
 
@@ -39,8 +38,16 @@ Inhalt:
 {}
 ---"""
 
+# NEUER Prompt für die Tageszusammenfassung
+SUMMARY_PROMPT = """Fasse die folgenden deutschen KI-Nachrichten des Tages zusammen. Erstelle eine professionelle, flüssig lesbare Zusammenfassung im Stil eines Nachrichten-Briefings für Technik-Enthusiasten. Beginne mit einer prägnanten, fesselnden Schlagzeile. Strukturiere den Text in sinnvolle Absätze. Nenne keine Quellen. Gib nur die Zusammenfassung als reinen Text zurück, ohne jegliche JSON-Formatierung oder Markdown.
+
+Nachrichten:
+---
+{}
+---"""
+
+
 def load_json_file(filename, default_value):
-    """Lädt eine JSON-Datei sicher."""
     if not os.path.exists(filename): return default_value
     try:
         with open(filename, "r", encoding="utf-8") as f:
@@ -48,14 +55,20 @@ def load_json_file(filename, default_value):
     except (json.JSONDecodeError, IOError): return default_value
 
 def save_json_file(data, filename):
-    """Speichert Daten sicher in einer JSON-Datei."""
     try:
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
     except IOError as e: print(f"Fehler beim Speichern von {filename}: {e}")
 
+# NEUE Funktion zum Speichern von reinem Text
+def save_text_file(data, filename):
+    try:
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(data)
+    except IOError as e: print(f"Fehler beim Speichern von {filename}: {e}")
+
+
 def get_new_entries(processed_links):
-    """Sammelt neue Einträge aus den Feeds, sortiert sie und begrenzt die Anzahl."""
     all_new_entries = []
     print("Starte das Abrufen der Feeds auf neue Einträge...")
     for name, feed_info in RSS_FEEDS.items():
@@ -92,7 +105,6 @@ def get_new_entries(processed_links):
     return limited_entries
 
 def process_with_gemini(entries):
-    """Verarbeitet neue Einträge mit Gemini, inklusive Pausen und robuster JSON-Extraktion."""
     if not entries: return []
     
     print(f"\nStarte die Verarbeitung von {len(entries)} neuen Einträgen mit Gemini...")
@@ -103,10 +115,6 @@ def process_with_gemini(entries):
         try:
             full_prompt = PROMPT.format(entry['title'] + "\n" + entry['content_raw'])
             response = model.generate_content(full_prompt)
-            
-            # --- KORRIGIERTE JSON-VERARBEITUNG ---
-            # Wir parsen direkt den Text, da "response_mime_type" ein valides JSON garantieren sollte.
-            # Das manuelle Suchen nach '{' und '}' ist nicht mehr nötig und war fehleranfällig.
             json_data = json.loads(response.text)
             
             entry['summary_ai'] = json_data.get('summary', 'Keine Zusammenfassung.')
@@ -120,10 +128,41 @@ def process_with_gemini(entries):
             print(f"FEHLER bei der Verarbeitung von '{entry['title']}': {e}")
         
         finally:
-            # Eine kleine Pause ist immer gut, um API-Limits nicht zu überreizen.
             time.sleep(1) 
             
     return processed_entries
+
+# NEUE Funktion zur Erstellung des Tages-Briefings
+def generate_and_save_daily_summary(articles):
+    print("\nErstelle Tageszusammenfassung...")
+    today_utc = date.today()
+    
+    # Filtere nur Artikel von heute
+    todays_articles = [
+        article for article in articles 
+        if datetime.fromisoformat(article['published']).date() == today_utc
+    ]
+
+    if not todays_articles:
+        print("Keine heutigen Artikel für eine Zusammenfassung gefunden.")
+        return
+
+    # Kombiniere die Titel und Zusammenfassungen für den Prompt
+    content_for_summary = "\n\n".join(
+        [f"Titel: {a['title']}\nZusammenfassung: {a['summary_ai']}" for a in todays_articles]
+    )
+
+    try:
+        model = genai.GenerativeModel('gemini-1.5-flash-latest')
+        response = model.generate_content(SUMMARY_PROMPT.format(content_for_summary))
+        
+        # Speichere die reine Text-Antwort
+        summary_data = {"summary_text": response.text}
+        save_json_file(summary_data, SUMMARY_FILE)
+        print("✅ Tägliches Briefing erfolgreich erstellt und in summary.json gespeichert.")
+    except Exception as e:
+        print(f"FEHLER bei der Erstellung der Tageszusammenfassung: {e}")
+
 
 # --- Hauptablauf ---
 if __name__ == "__main__":
@@ -141,7 +180,11 @@ if __name__ == "__main__":
             
             save_json_file(combined_data, DATA_FILE)
             print(f"\n✅ {len(successfully_processed)} neue Einträge hinzugefügt. Gesamt: {len(combined_data)}.")
+            
+            # NEUER Schritt: Tageszusammenfassung erstellen
+            generate_and_save_daily_summary(successfully_processed)
         else:
             print("\nKeine neuen Einträge konnten erfolgreich verarbeitet werden.")
     else:
         print("\nKeine neuen Einträge in den Feeds gefunden.")
+
