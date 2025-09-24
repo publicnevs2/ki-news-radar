@@ -3,7 +3,7 @@ import json
 import feedparser
 from datetime import datetime, timezone
 import re
-import time # Wichtig für die Höflichkeitspause
+import time
 import google.generativeai as genai
 from dotenv import load_dotenv
 
@@ -29,16 +29,15 @@ RSS_FEEDS = {
     "t3n (Thema KI)": {"url": "https://t3n.de/tag/ki/rss", "type": "article"},
 }
 
-PROMPT = """Analysiere den folgenden Inhalt. Gib deine Antwort ausschließlich als valides JSON-Objekt zurück, ohne umschließende Markdown-Syntax. Das JSON-Objekt soll folgende Struktur haben:
-{
-  "summary": "Eine prägnante Zusammenfassung des Inhalts in maximal zwei Sätzen auf Deutsch. Unabhängig von der Originalsprache, die Antwort muss auf Deutsch sein.",
-  "topics": ["ein-Haupt-Thema", "ein-weiteres-Thema", "ein-drittes-Thema"]
-}
+# --- KORRIGIERTER PROMPT ---
+# Klarere, einfachere Anweisung ohne verwirrende Beispiele.
+PROMPT = """Analysiere den folgenden Inhalt. Erstelle eine prägnante deutsche Zusammenfassung in maximal zwei Sätzen und extrahiere bis zu drei relevante Themen als Stichwörter.
+Gib deine Antwort ausschließlich als valides JSON-Objekt mit den Schlüsseln "summary" (string) und "topics" (array of strings) zurück.
+
 Inhalt:
 ---
 {}
----
-"""
+---"""
 
 def load_json_file(filename, default_value):
     """Lädt eine JSON-Datei sicher."""
@@ -68,21 +67,25 @@ def get_new_entries(processed_links):
                     dt_object = datetime.now(timezone.utc)
                     if published_time:
                         dt_object = datetime(*published_time[:6], tzinfo=timezone.utc)
-
+                    
                     content = entry.get('summary', entry.get('content', [{'value': ''}])[0]['value'])
                     clean_content = re.sub('<[^<]+?>', '', content)
+                    
                     audio_url = ""
                     if feed_info["type"] == "podcast" and "enclosures" in entry:
-                         for enc in entry.enclosures:
-                            if "audio" in enc.get("type", ""): audio_url = enc.href; break
-                    
+                        for enc in entry.enclosures:
+                            if "audio" in enc.get("type", ""):
+                                audio_url = enc.href
+                                break
+                                        
                     all_new_entries.append({
                         "source": name, "title": entry.title, "link": entry.link,
                         "published": dt_object.isoformat(), "type": feed_info["type"],
                         "content_raw": clean_content[:2000], "audio_url": audio_url
                     })
-        except Exception as e: print(f"Fehler beim Abrufen von Feed {name}: {e}")
-    
+        except Exception as e:
+            print(f"Fehler beim Abrufen von Feed {name}: {e}")
+            
     all_new_entries.sort(key=lambda x: x['published'], reverse=True)
     limited_entries = all_new_entries[:MAX_ENTRIES_PER_RUN]
     print(f"{len(all_new_entries)} neue Einträge gefunden. Verarbeite die {len(limited_entries)} neuesten.")
@@ -101,28 +104,24 @@ def process_with_gemini(entries):
             full_prompt = PROMPT.format(entry['title'] + "\n" + entry['content_raw'])
             response = model.generate_content(full_prompt)
             
-            # KORREKTUR: Robuste JSON-Extraktion statt blindem Parsen
-            response_text = response.text.strip()
-            # Finde den ersten '{' und den letzten '}' um sicherzustellen, dass wir nur das JSON-Objekt haben
-            start_index = response_text.find('{')
-            end_index = response_text.rfind('}')
+            # --- KORRIGIERTE JSON-VERARBEITUNG ---
+            # Wir parsen direkt den Text, da "response_mime_type" ein valides JSON garantieren sollte.
+            # Das manuelle Suchen nach '{' und '}' ist nicht mehr nötig und war fehleranfällig.
+            json_data = json.loads(response.text)
             
-            if start_index != -1 and end_index != -1:
-                json_str = response_text[start_index:end_index+1]
-                json_data = json.loads(json_str)
-                entry['summary_ai'] = json_data.get('summary', 'Keine Zusammenfassung.')
-                entry['topics'] = json_data.get('topics', [])
-                del entry['content_raw']
-                processed_entries.append(entry)
-                print(f"-> '{entry['title']}' erfolgreich verarbeitet.")
-            else:
-                print(f"FEHLER: Kein valides JSON in der Gemini-Antwort für '{entry['title']}' gefunden.")
+            entry['summary_ai'] = json_data.get('summary', 'Keine Zusammenfassung.')
+            entry['topics'] = json_data.get('topics', [])
+            del entry['content_raw']
+            
+            processed_entries.append(entry)
+            print(f"-> '{entry['title']}' erfolgreich verarbeitet.")
 
         except Exception as e:
             print(f"FEHLER bei der Verarbeitung von '{entry['title']}': {e}")
         
         finally:
-            time.sleep(1) # Höflichkeitspause
+            # Eine kleine Pause ist immer gut, um API-Limits nicht zu überreizen.
+            time.sleep(1) 
             
     return processed_entries
 
@@ -146,4 +145,3 @@ if __name__ == "__main__":
             print("\nKeine neuen Einträge konnten erfolgreich verarbeitet werden.")
     else:
         print("\nKeine neuen Einträge in den Feeds gefunden.")
-
