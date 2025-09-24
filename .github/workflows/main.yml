@@ -2,40 +2,44 @@ name: Fetch AI News Daily
 
 on:
   schedule:
-    # Läuft jeden Tag um 05:00 Uhr UTC (das ist 07:00 Uhr deutscher Sommerzeit)
+    # Runs every day at 05:00 UTC (which is 07:00 German summer time)
     - cron: '0 5 * * *'
-  # Dieser "workflow_dispatch" erlaubt es dir, den Job manuell zu starten
+  # This "workflow_dispatch" allows you to start the job manually
   workflow_dispatch:
+
+# Added permissions block to allow writing to the repository
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Schritt 1: Das Repository auf den Server von GitHub kopieren
+      # Step 1: Check out the repository to the GitHub server
       - name: Checkout Repo
         uses: actions/checkout@v4
 
-      # Schritt 2: Python in der gewünschten Version installieren
+      # Step 2: Set up the desired Python version
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      # Schritt 3: Die Python-Pakete installieren (feedparser, etc.)
+      # Step 3: Install the required Python packages (feedparser, etc.)
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # Schritt 4: Das Hauptskript ausführen
+      # Step 4: Run the main script
       - name: Run script to fetch and summarize news
         run: python fetch_news.py
         env:
-          # Hier holt sich das Skript den API-Key aus dem "Geheimfach"
+          # The script gets the API key from the "secrets" vault here
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
-      # Schritt 5: Die geänderten Dateien (data.json, etc.) automatisch speichern
+      # Step 5: Automatically commit and push the changed files (data.json, etc.)
       - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "📰 Update daily news"
-          # Achtung: Wir müssen beide Dateien überwachen!
+          # Important: We need to monitor both files!
           file_pattern: "data.json processed_links.json"
