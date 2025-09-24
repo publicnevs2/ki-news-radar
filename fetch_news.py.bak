@@ -146,13 +146,3 @@ if __name__ == "__main__":
     else:
         print("\nKeine neuen Einträge in den Feeds gefunden.")
 
-### **Dein Schlachtplan**
-
-1.  **Backend auf GitHub aktualisieren:**
-    * Lade das neue, intelligente Skript auf GitHub hoch:
-      ```bash
-      git add .
-      git commit -m "fix(backend): Add rate limiting and batch processing"
-      git push
-      
-
