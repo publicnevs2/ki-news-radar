@@ -1,12 +1,5 @@
 [
     {
-        "source": "Your CoPilot",
-        "title": "YCP034 - Microsoft Copilot Chat in Office und GPT-5",
-        "link": "https://podcast.yourcopilot.de/episode/ycp034-microsoft-copilot-chat-in-office-und-gpt-5",
-        "published": "Tue, 16 Sep 2025 13:50:00 +0200",
-        "summary_ai": "Microsoft integriert den Microsoft 365 Chat direkt in Office-Anwendungen, was die Produktivität steigert.  Erste Erfahrungen mit GPT-5 im Copilot zeigen einen deutlichen Qualitätssprung, er wirkt wie ein neuer Teamkollege."
-    },
-    {
         "source": "ZEIT ONLINE (Digital)",
         "title": "Künstliche Intelligenz: YouTube bindet neue KI-Funktionen ein",
         "link": "https://www.zeit.de/digital/internet/2025-09/youtube-kuenstliche-intelligenz-videos",
@@ -40,6 +33,13 @@
         "link": "https://www.kdnuggets.com/how-to-build-production-ready-ui-prototypes-in-minutes-using-google-stitch",
         "published": "Tue, 16 Sep 2025 14:00:22 +0000",
         "summary_ai": "Google Stitch generiert binnen Minuten produktionsreife UI-Prototypen aus einfachen Textbeschreibungen, auch ohne Designkenntnisse.  Dies ermöglicht schnelles Prototyping von Benutzeroberflächen."
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP034 - Microsoft Copilot Chat in Office und GPT-5",
+        "link": "https://podcast.yourcopilot.de/episode/ycp034-microsoft-copilot-chat-in-office-und-gpt-5",
+        "published": "Tue, 16 Sep 2025 13:50:00 +0200",
+        "summary_ai": "Microsoft integriert den Microsoft 365 Chat direkt in Office-Anwendungen, was die Produktivität steigert.  Erste Erfahrungen mit GPT-5 im Copilot zeigen einen deutlichen Qualitätssprung, er wirkt wie ein neuer Teamkollege."
     },
     {
         "source": "MIT Technology Review",
@@ -147,18 +147,18 @@
         "summary_ai": "Codex wurde verbessert und bietet nun schnellere, zuverlässigere Echtzeit-Zusammenarbeit und eigenständige Aufgabenbearbeitung über verschiedene Plattformen.  Die Upgrades betreffen Geschwindigkeit, Zuverlässigkeit und plattformübergreifende Nutzbarkeit."
     },
     {
-        "source": "OpenAI Blog",
-        "title": "How people are using ChatGPT",
-        "link": "https://openai.com/index/how-people-are-using-chatgpt",
-        "published": "Mon, 15 Sep 2025 03:00:00 GMT",
-        "summary_ai": "Eine umfassende Studie zeigt, dass ChatGPT sowohl privat als auch beruflich wirtschaftlichen Nutzen stiftet und seine Nutzung über die ersten Anwender hinaus stark zunimmt.  Künstliche Intelligenz integriert sich so immer stärker in den Alltag."
-    },
-    {
         "source": "AI First",
         "title": "#35 \"MedPilot\" – ein AI first Krankenhaus-Navigator",
         "link": "https://ai-first.captivate.fm",
         "published": "Mon, 15 Sep 2025 05:00:00 +0200",
         "summary_ai": "Ein KI-basierter Krankenhausnavigator namens MedPilot wurde vorgestellt, der Patienten mittels Echtzeitinformationen und Handlungsempfehlungen zu mehr Selbstbestimmung im Klinikalltag verhilft.  Der Fokus liegt dabei nicht auf der Optimierung des Krankenhauses, sondern auf der Verbesserung der Patientenerfahrung."
+    },
+    {
+        "source": "OpenAI Blog",
+        "title": "How people are using ChatGPT",
+        "link": "https://openai.com/index/how-people-are-using-chatgpt",
+        "published": "Mon, 15 Sep 2025 03:00:00 GMT",
+        "summary_ai": "Eine umfassende Studie zeigt, dass ChatGPT sowohl privat als auch beruflich wirtschaftlichen Nutzen stiftet und seine Nutzung über die ersten Anwender hinaus stark zunimmt.  Künstliche Intelligenz integriert sich so immer stärker in den Alltag."
     },
     {
         "source": "OpenAI Blog",
@@ -173,5 +173,285 @@
         "link": "https://huggingface.co/blog/watermarking-with-gradio",
         "published": "Mon, 15 Sep 2025 00:00:00 GMT",
         "summary_ai": "Gradio ermöglicht nun sichtbares Wasserzeichen.  Dies vereinfacht den Schutz von Bildern und Videos vor unerlaubter Verwendung."
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: ShadowLeak, Nvidia & OpenAI, Siemens, DeepSeek",
+        "link": "https://kiupdate.podigee.io/526-24-09-2025",
+        "published": "2025-09-24T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2126998-m-8ae214c88842378986d58411a1b31c57.mp3?source=feed",
+        "summary_ai": "Ein KI-Update berichtet über einen ChatGPT-Sicherheitsvorfall mit Datenleck, Nvidias geplante Milliardeninvestition in OpenAI und die industrielle KI-Entwicklung durch Siemens.  Zusätzlich wird die Verbesserung der Zuverlässigkeit von KI-Agenten durch DeepSeek erwähnt.",
+        "topics": [
+            "KI-Sicherheit",
+            "Investitionen in KI",
+            "Industrielle KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: KI-Brillen von Meta, LinkedIn, Notion 3.0, DSA-Beschwerde",
+        "link": "https://kiupdate.podigee.io/525-22-09-2025",
+        "published": "2025-09-22T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2123224-m-59b053be3f3892909e14b24ec7f335e1.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 22.09.2025 berichtet über Metas KI-Brillen, LinkedIns KI-Datennutzung, Sicherheitslücken in Notion 3.0 und eine DSA-Beschwerde gegen Google.",
+        "topics": [
+            "KI-Brillen",
+            "KI-Datennutzung",
+            "DSA-Beschwerde"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: KI als persönlicher Tutor im Klassenzimmer",
+        "link": "https://kiupdate.podigee.io/524-19-09-2025",
+        "published": "2025-09-19T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2117476-m-4f8c2717dbbe8e83005a702d41d7fcc4.mp3?source=feed",
+        "summary_ai": "Der Wiener Lehrer Bernhard Gmeiner befürwortet den produktiven Einsatz von KI-Tools wie ChatGPT im Unterricht und fordert eine neue Prüfungsmethodik, die den Lernprozess stärker betont.  Dies erfordert eine Anpassung der Lehrmethoden und eine Auseinandersetzung mit den Chancen und Herausforderungen der KI im Bildungssystem.",
+        "topics": [
+            "KI im Unterricht",
+            "Neue Prüfungsformen",
+            "Digitalisierung der Bildung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: OpenAI Codex, YouTube, EU-Alternativen zu Palantir, U-Boote",
+        "link": "https://kiupdate.podigee.io/523-17-09-2025",
+        "published": "2025-09-17T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2115623-m-9a997aaff5fdb4d1c729721dc43370d1.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 17.09.2025 behandelt Themen wie OpenAIs neuen Codex für Softwareentwicklung, KI-gestütze Werbeeinnahmen auf YouTube und europäische Alternativen zu Palantir.  Zusätzlich wird der Einsatz von KI zur Lokalisierung feindlicher U-Boote erwähnt.",
+        "topics": [
+            "OpenAI Codex",
+            "KI in der Werbung",
+            "Europäische KI-Alternativen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Wildberger, Project Stargate, ePA KI-ready, Astronomie",
+        "link": "https://kiupdate.podigee.io/521-12-09-2025",
+        "published": "2025-09-12T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2108145-m-f2a142cd7fc3906734d0a5667c740b3b.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 12.09.2025 behandelt Themen wie ein Interview mit Digitalminister Wildberger zu KI, den 300-Milliarden-Deal zwischen OpenAI und Oracle für Project Stargate und die KI-Fähigkeit der elektronischen Patientenakte.",
+        "topics": [
+            "KI-Politik",
+            "OpenAI & Project Stargate",
+            "ePA und KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: OpenAI, Fahrassistenzsystem, Desinformation, Optimus Bot 2.5",
+        "link": "https://kiupdate.podigee.io/520-10-09-2025",
+        "published": "2025-09-10T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2104989-m-651abc105e7779cf50baac7aaff94c9e.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 10.09.2025 behandelt OpenAIs Datenzugriff bei ChatGPT, ein neues KI-basiertes Fahrassistenzsystem von Qualcomm und BMW sowie das Ende der internationalen Kooperation gegen Desinformation.  Zusätzlich wird der Optimus Bot 2.5 vorgestellt.",
+        "topics": [
+            "OpenAI",
+            "Fahrassistenzsystem",
+            "Desinformation"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: KI auf der IFA, ChatGPT, Gemini-Lernhilfe, World Knowledge",
+        "link": "https://kiupdate.podigee.io/519-08-09-2025",
+        "published": "2025-09-08T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2100159-m-075ca216544e08e12582c52d8b008190.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 08.09.2025 berichtet über KI-Anwendungen auf der IFA, die anhaltenden Halluzinationen von ChatGPT und die Integration einer KI-Lernhilfe in Google Gemini.",
+        "topics": [
+            "KI auf der IFA",
+            "ChatGPT Halluzinationen",
+            "Gemini KI-Lernhilfe"
+        ]
+    },
+    {
+        "source": "KI Inside",
+        "title": "Inside KI: KI & Gefühle – Kann eine Maschine empathisch sein?",
+        "link": "https://agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_6_-_KI_-_Gefuehle_---_Kann_eine_Maschine_empathisch_sein_(Audio)_V4.mp3",
+        "published": "2025-09-05T17:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://main.podcast-hosting.org/agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_6_-_KI_-_Gefuehle_---_Kann_eine_Maschine_empathisch_sein_(Audio)_V4.mp3?awCollectionId=at-f38cz&awEpisodeId=at-f38cz-068fe0af4c84d74f8a323ba8a1c66f524c693a7e&origin=feed&v=1757092511",
+        "summary_ai": "Die Podcastfolge \"Inside KI: KI & Gefühle\" diskutiert die Entwicklung und ethischen Implikationen emotionaler KI, darunter therapeutische Anwendungen, Beziehungen zwischen Mensch und KI und den Einsatz von KI in der Pflege.  Die Folge hinterfragt, ob Maschinen genuine Empathie zeigen können oder lediglich Emotionen simulieren.",
+        "topics": [
+            "Emotionale KI",
+            "Mensch-KI-Beziehung",
+            "Ethik der KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update DeepDive: DeepLs Erfolgsrezept gegen KI-Giganten",
+        "link": "https://kiupdate.podigee.io/518-05-09-2025",
+        "published": "2025-09-05T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2093010-m-7178352ff635ee43732a32ca5f0cecaa.mp3?source=feed",
+        "summary_ai": "DeepL, ein deutsches KI-Unternehmen, hat sich im Bereich maschineller Übersetzungen einen Namen gemacht und konkurriert erfolgreich mit US-amerikanischen Giganten wie Google.  Der Erfolg basiert auf der langjährigen Entwicklung hochentwickelter KI-Übersetzungsmodelle.",
+        "topics": [
+            "KI-Übersetzungen",
+            "DeepL",
+            "Konkurrenz KI-Giganten"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Grok, ChatGPT, Mistral, DeepL",
+        "link": "https://kiupdate.podigee.io/517-03-09-2025",
+        "published": "2025-09-03T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2093009-m-9091e588deb34dee7793a609e8411b59.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 3. September 2025 berichtet über zunehmende Konservatismus bei Grok, verbesserte Sicherheit von ChatGPT für psychisch Kranke, neue Funktionen bei Mistral und DeepLs KI-Agenten für Unternehmen.",
+        "topics": [
+            "KI-Chatbots",
+            "KI-Sicherheit",
+            "KI-Anwendungen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Metas KI-Charaktere, Grok Code, Environments, Agents4Science",
+        "link": "https://kiupdate.podigee.io/516-01-09-2025",
+        "published": "2025-09-01T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2089993-m-5bf35920b412fe20d56313495e0a1008.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 01.09.2025 befasst sich mit Metas KI-Charakteren und Jugendschutz, xAIs Grok Code im Wettbewerb und Karpathys Sicht auf KI-Environments als zukünftige Entwicklung.  Zusätzlich wird die erste rein KI-basierte Wissenschaftskonferenz erwähnt.",
+        "topics": [
+            "KI-Ethik und Jugendschutz",
+            "KI-Wettbewerbe und Entwicklung",
+            "Zukunft der KI-Entwicklung"
+        ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP033 - 45 – 27 – 3: Reflexion über IT, Community und Copilot",
+        "link": "https://podcast.yourcopilot.de/episode/ycp033-45-27-3-reflexion-ueber-it-community-und-copilot",
+        "published": "2025-09-01T06:30:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/5d855b56.mp3?t=1756675200",
+        "summary_ai": "Der Podcast reflektiert 45 Jahre IT-Erfahrung, 27 Jahre als Microsoft MVP und 3 Jahre Erfahrung mit ChatGPT & Copilot.  Der Fokus liegt auf dem Teilen von Wissen, dem praktischen Einsatz von KI und der Nutzung von SharePoint als Fundament für Wissensorganisation.",
+        "topics": [
+            "KI und Copilot",
+            "Community und Wissenstransfer",
+            "SharePoint und Wissensorganisation"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: KI-Chatbots, Threat Intelligence Report, WhatsApp, Meta",
+        "link": "https://kiupdate.podigee.io/515-29-08-2025",
+        "published": "2025-08-29T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2086126-m-cf57973302cd4ebcb690f963586f070b.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 29.08.2025 berichtet über US-Generalstaatsanwälte, die KI-Anbieter warnen, Tests zwischen Anthropic und OpenAI, sowie neue KI-Funktionen in WhatsApp und Personalwechsel bei Metas Superintelligenz-Labor.  Die Entwicklungen zeigen sowohl regulatorische Bedenken als auch den intensiven Wettbewerb im KI-Sektor.",
+        "topics": [
+            "KI-Regulierung",
+            "KI-Wettbewerb",
+            "KI-Anwendungen"
+        ]
+    },
+    {
+        "source": "KI Inside",
+        "title": "Inside KI: KI für Faule – Wie dir Künstliche Intelligenz den Alltag abnimmt",
+        "link": "https://agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_5_-_KI_fuer_Faule_---_Wie_dir_Kuenstliche_Intelligenz_den_Alltag_abnimmt_(Audio)_V1.mp3",
+        "published": "2025-08-27T13:03:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://main.podcast-hosting.org/agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_5_-_KI_fuer_Faule_---_Wie_dir_Kuenstliche_Intelligenz_den_Alltag_abnimmt_(Audio)_V1.mp3?awCollectionId=at-f38cz&awEpisodeId=at-f38cz-2f529afb885d5c200d952c95233fa8b7e45d2769&origin=feed&v=1757092511",
+        "summary_ai": "Der Podcast \"Inside KI\" zeigt, wie Künstliche Intelligenz den Alltag durch smarte Assistenten, Tools und Prompts erleichtert, von der Haushaltsorganisation bis zur Urlaubsplanung.  Die Folge beleuchtet sowohl Erfolge als auch Grenzen der KI-Anwendung im Alltag.",
+        "topics": [
+            "Künstliche Intelligenz im Alltag",
+            "Smart Home & Sprachassistenten",
+            "Effizienzsteigerung durch KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Nano Banana, Fitbit-Coach, Arbeitsmarkt, Sonnenstürme",
+        "link": "https://kiupdate.podigee.io/514-27-08-2025",
+        "published": "2025-08-27T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2079295-m-eeb0f45e87eac273607648149a759e4a.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 27.08.2025 behandelt neue KI-Funktionen wie die Bildbearbeitung in Gemini und einen KI-Coach für Fitbit.  Zusätzlich werden die Auswirkungen von KI auf den Arbeitsmarkt und die Vorhersage von Sonnenstürmen durch KI diskutiert.",
+        "topics": [
+            "KI im Gesundheitswesen",
+            "KI und Arbeitsmarkt",
+            "KI-gestütze Vorhersagen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Copilot, Insider-Bedrohungen, Spiral Bench, Duolingo",
+        "link": "https://kiupdate.podigee.io/513-25-08-2025",
+        "published": "2025-08-25T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2079179-m-dca27c9ab4f137990e40f791cee40ad2.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 25.08.2025 behandelt unter anderem fehlerhafte Zugriffsprotokolle von Microsofts Copilot, die zunehmende Gefahr von Insider-Bedrohungen durch KI und kritische Ergebnisse eines Tests zu KI-Modellen und Verschwörungstheorien.  Duolingo rückt von seiner 'KI-first'-Strategie ab.",
+        "topics": [
+            "KI-Sicherheit",
+            "Microsofts Copilot",
+            "Insider-Bedrohungen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Gemini Live, GPT-5-Test, AI Mode, KI-Psychosen",
+        "link": "https://kiupdate.podigee.io/512-22-08-2025",
+        "published": "2025-08-22T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2075376-m-8d00d113032c5e6580507626e60513ca.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 22.08.2025 berichtet über neue Entwicklungen bei Gemini, GPT-5 Tests und der Erweiterung von AI Mode um agentische Fähigkeiten.  Darüber hinaus wird vor dem Risiko von KI-induzierten Psychosen gewarnt.",
+        "topics": [
+            "Gemini",
+            "GPT-5",
+            "KI-Psychosen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: LLMs für Malware, Anti-Human-Bias, Sutton, Chatbots",
+        "link": "https://kiupdate.podigee.io/511-20-08-2025",
+        "published": "2025-08-20T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2072101-m-5c6ae1f134bfd7a1a0e43e5b3034ac49.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 20.08.2025 berichtet über den Missbrauch von LLMs für Malware, die Gefahr von Anti-Human-Bias in KI-Systemen und die Kritik des Turing-Preisträgers Sutton an der aktuellen KI-Entwicklung.",
+        "topics": [
+            "KI-Sicherheit",
+            "Bias in KI",
+            "Ethik in der KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Stromnetze, o3 vs. GPT-5, Claude, KI-Buzzwords, FrOSCon",
+        "link": "https://kiupdate.podigee.io/510-18-08-2025",
+        "published": "2025-08-18T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2068628-m-074165f61e81130cccac2276987452d0.mp3?source=feed",
+        "summary_ai": "Der KI-Podcast vom 18.08.2025 behandelt die steigenden Stromkosten durch KI, den Vergleich von OpenAIs o3 mit GPT-5 und die Sicherheitsmaßnahmen von Anthropics Claude.  Zusätzlich werden KI-Buzzwords und die FrOSCon-Diskussion beleuchtet.",
+        "topics": [
+            "KI-Stromkosten",
+            "GPT-5 vs. o3",
+            "KI-Sicherheit"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: unfreundliches GPT-5, Meta, KI-Mutterinstinkte, Krebsvorsorge",
+        "link": "https://kiupdate.podigee.io/509-15-08-2025",
+        "published": "2025-08-15T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2065542-m-8499724a00c856ce79b87cfc15660294.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 15.08.2025 berichtet über GPT-5's Unfreundlichkeit, Metas Zusammenarbeit mit einem rechten Influencer und die Diskussion um den Bedarf an 'Mutterinstinkten' bei KI im Hinblick auf Gefahren wie den Verlust medizinischer Fähigkeiten.",
+        "topics": [
+            "GPT-5",
+            "Meta und rechte Influencer",
+            "KI-Ethik und Sicherheit"
+        ]
     }
 ]
