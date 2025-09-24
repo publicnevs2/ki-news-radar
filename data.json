@@ -1573,5 +1573,565 @@
             "OpenAI",
             "KI in der Industrie"
         ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP027 - Aktionen verstehen und Loop entdecken",
+        "link": "https://podcast.yourcopilot.de/episode/ycp027-aktionen-verstehen-und-loop-entdecken",
+        "published": "2025-03-31T13:45:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/21ce5029.mp3?t=1743427176",
+        "summary_ai": "Das Dokument YCP027 behandelt das Verständnis von Aktionen und die Entdeckung von Loops.  Es enthält Links zu Sabrina Göttlinger auf LinkedIn und zu einem Global AI Bootcamp in Berlin sowie zu einem Webinar über KI in Microsoft 365.",
+        "topics": [
+            "Aktionen",
+            "Loops",
+            "Künstliche Intelligenz"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI Update kompakt: Verunsicherte KI, KI am Arbeitsplatz, RAG, NY Times gegen Open AI",
+        "link": "https://kiupdate.podigee.io/439-new-episode",
+        "published": "2025-03-31T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1853626-m-659e40abf9ed30306e3abf5baed50047.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 31.03.2025 behandelt die Verunsicherung im Umgang mit KI, deren Einsatz am Arbeitsplatz und RAG-Systeme, neben dem Rechtsstreit zwischen der New York Times und OpenAI.",
+        "topics": [
+            "KI am Arbeitsplatz",
+            "RAG-Systeme",
+            "KI-Recht"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Smarte Industrielösungen mit KI-Brillen",
+        "link": "https://kiupdate.podigee.io/438-28-03-2025",
+        "published": "2025-03-28T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1843888-m-59ebaefa4e569c5f67691186f1da947a.mp3?source=feed",
+        "summary_ai": "Der Podcast \"KI-Update\" befasst sich mit dem Einsatz von KI-Brillen in der Industrie.  Der KI-Forscher Vivek Chavan erläutert die Vorteile dieser Technologie für industrielle Anwendungen im Bereich Computer Vision.",
+        "topics": [
+            "KI-Brillen",
+            "Industrie 4.0",
+            "Computer Vision"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: KI-Ghibli, OpenAI, EuroBERT, Apple",
+        "link": "https://kiupdate.podigee.io/437-27-03-2025",
+        "published": "2025-03-27T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1843887-m-62d5bbfbbd9a3372621cee5504979b32.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 27.03.2025 berichtet über einen viralen Studio-Ghibli-Bildgenerator, OpenAIs Übergang zu Anthropics offenem Modellstandard und die europäische Weiterbildung des KI-Modells BERT.  Darüber hinaus wird Apples CEO Tim Cooks Lob für DeepSeek erwähnt.",
+        "topics": [
+            "KI-Bildgenerator",
+            "OpenAI",
+            "Europäische KI-Modelle"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: ChatGPTs Bildgenerator, Anthropics Claude, eBay, ARC-AGI-2",
+        "link": "https://kiupdate.podigee.io/436-26-03-2025",
+        "published": "2025-03-26T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1843885-m-4af2183d3cf8476c8457fe5f11141d01.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 26.03.2025 berichtet über neue Entwicklungen in der KI: ChatGPT erhält einen integrierten Bildgenerator, Anthropic verbessert Claude durch einen einfachen Denkbefehl, und eBay plant, persönliche Daten für KI-Training zu verwenden.  Ein neuer AGI-Test hat zudem gezeigt, dass aktuelle KI-Modelle noch an ihre Grenzen stossen.",
+        "topics": [
+            "ChatGPT",
+            "AGI-Test",
+            "KI-Datennutzung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Well-Being-Studie, Tencent, Malaysia, Apple Intelligence",
+        "link": "https://kiupdate.podigee.io/435-25-03-2025",
+        "published": "2025-03-25T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1843883-m-d7b7d5036e3f7f63e03fd6e224d412e6.mp3?source=feed",
+        "summary_ai": "Ein KI-Update berichtet über eine MIT-Studie zu Chatbots und emotionalem Wohlbefinden, Tencent's neue KI und Malaysias Bemühungen, den Nvidia-Chip-Export nach China zu kontrollieren.  Zusätzlich wird Apples Transparenz zum KI-Speicherverbrauch erwähnt.",
+        "topics": [
+            "KI-Wohlbefinden",
+            "KI-Entwicklung (Tencent)",
+            "Chipexportkontrolle"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Perplexity & TikTok, DeepSeek, Deepfakes, Wettervorhersage",
+        "link": "https://kiupdate.podigee.io/434-24-03-2025",
+        "published": "2025-03-24T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1843769-m-512b006914b314fdaa9da0d8e853765d.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 24.03.2025 behandelt Perplexitys Interesse an TikTok, die von einem KI-Veteranen als Bedrohung für OpenAI wahrgenommene DeepSeek Technologie und die Notwendigkeit von Meta, stärker gegen Deepfakes vorzugehen.  Zusätzlich wird die Möglichkeit einer vollständigen Wettervorhersage auf einem PC erwähnt.",
+        "topics": [
+            "Perplexity",
+            "Deepfakes",
+            "DeepSeek"
+        ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP026 - SharePoint Pages mit Copilot erstellen",
+        "link": "https://podcast.yourcopilot.de/episode/ycp026-sharepoint-pages-mit-copilot-erstellen",
+        "published": "2025-03-21T14:05:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/ed4c915b.mp3?t=1742564675",
+        "summary_ai": "Dieser Workshop zeigt, wie man mithilfe von Copilot effizient SharePoint-Seiten erstellt und optimiert.  Die Anleitung umfasst die automatisierte Seitenerstellung, bessere Dokumentenorganisation und praktische Anwendungshinweise.",
+        "topics": [
+            "SharePoint",
+            "Copilot",
+            "Automatisierung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Claude, OpenAIs Stimmen, Nvidias Investitionen, Atlas",
+        "link": "https://kiupdate.podigee.io/433-21-03-2025",
+        "published": "2025-03-21T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1840759-m-9efe9e203360cbf38f3ea1ba02024231.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 21.03.2025 berichtet über Claudes Internetzugang, neue OpenAI Sprachmodelle und Nvidias massive Investitionen in die US-amerikanische Lieferkette.  Zusätzlich wird der Fortschritt des KI-gesteuerten Atlas-Roboters hinsichtlich menschenähnlicher Bewegungen hervorgehoben.",
+        "topics": [
+            "KI-Sprachmodelle",
+            "Nvidia-Investitionen",
+            "Robotik"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: NOYB-Beschwerde, Open Source, Apple Intelligence, KI-Brücke",
+        "link": "https://kiupdate.podigee.io/432-20-03-2025",
+        "published": "2025-03-20T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1839506-m-fefa75c6c37865936aa14eb29ca8ce29.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 20.03.2025 behandelt Themen wie eine NOYB-Beschwerde gegen ChatGPT, die Bedeutung von Open Source und Apples ausbleibende KI-Tools.  Zusätzlich wird eine neue KI-Brücke vorgestellt, welche Zustände in Echtzeit übermitteln soll.",
+        "topics": [
+            "ChatGPT",
+            "Open Source",
+            "KI-Entwicklung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Google Gemini, KI-Suche, Nvidia GTC 2025, SpellRing",
+        "link": "https://kiupdate.podigee.io/431-19-03-2025",
+        "published": "2025-03-19T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1837842-m-13c5a2fdd1a7bc36c0eab389f2c31691.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 19.03.2025 berichtet über neue Funktionen für Googles Gemini,  Entwicklungen von der Nvidia GTC 2025 und den starken Anstieg von Webseitenzugriffen durch KI-Suchen, sowie einem KI-basierten Gebärdensprachén-Ring.",
+        "topics": [
+            "Google Gemini",
+            "Nvidia GTC 2025",
+            "KI-Suche"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Zoom AI Companion, KI-Bias, AGI, Robotik",
+        "link": "https://kiupdate.podigee.io/430-18-03-2025",
+        "published": "2025-03-18T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1836546-m-ef6fd4572f763297b240426f5db83cda.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 18.03.2025 berichtet über neue agentische Fähigkeiten von Zooms KI-Companion, Fortschritte im Umgang mit KI-Bias und die Einschätzung des Deepmind-CEOs, dass AGI in 5-10 Jahren möglich ist, sowie über KI-gestützte Fortschritte in der Robotik.",
+        "topics": [
+            "Zoom AI Companion",
+            "KI-Bias",
+            "AGI"
+        ]
+    },
+    {
+        "source": "KI>Inside",
+        "title": "KI-Kompetenzen an der Uni Graz: Wie AI Literacy gelingt",
+        "link": "https://podcasters.spotify.com/pod/show/leftshift-one/episodes/KI-Kompetenzen-an-der-Uni-Graz-Wie-AI-Literacy-gelingt-e3098nv",
+        "published": "2025-03-18T07:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://anchor.fm/s/fb4ad23c/podcast/play/99967167/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-2-17%2F396713293-44100-2-99d8ea911049.mp3",
+        "summary_ai": "Die Universität Graz fördert KI-Kompetenzen durch Initiativen wie UniGPT und diverse Weiterbildungsmaßnahmen für Mitarbeiter und Studierende, um KI-Literacy in Forschung und Lehre zu stärken.  Der Fokus liegt auf datenschutzkonformer KI-Nutzung und der Entwicklung von Best Practices im Hochschulkontext.",
+        "topics": [
+            "KI-Kompetenzen",
+            "AI Literacy",
+            "UniGPT"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: OpenAI, Apples Siri, Russische Propagada, xBox Copilot",
+        "link": "https://kiupdate.podigee.io/429-17-03-2025",
+        "published": "2025-03-17T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1835217-m-5d80e3c92399f5fe2d9f0284dc45cc45.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 17.03.2025 behandelt die Einstufung von KI als nationale Sicherheit (OpenAI), Schwierigkeiten bei der KI-Skalierung (Apples Siri), den Missbrauch von KI für russische Propaganda und die Anwendung von KI im Gaming (Xbox Copilot).  Die Berichte beleuchten sowohl positive als auch negative Aspekte des KI-Einsatzes.",
+        "topics": [
+            "KI-Sicherheit",
+            "KI-Skalierung",
+            "KI-Missbrauch"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: KI für mehr Nachhaltigkeit im Mittelstand",
+        "link": "https://kiupdate.podigee.io/428-14-03-2025",
+        "published": "2025-03-14T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1830827-m-b766883d2879c31f41ccbe5279d0677a.mp3?source=feed",
+        "summary_ai": "Der Green-AI-Hub Mittelstand unterstützt mittelständische Unternehmen mit KI-Lösungen zur Ressourceneinsparung.  Professor Oliver Thomas vom DFKI beschreibt im Podcast erfolgreiche Projekte und deren Anwendungspotential für andere Unternehmen.",
+        "topics": [
+            "KI im Mittelstand",
+            "Nachhaltigkeit",
+            "Ressourceneinsparung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Gemini-KI für Roboter, Open AI Operator, KI-System schreibt Paper",
+        "link": "https://kiupdate.podigee.io/427-new-episode",
+        "published": "2025-03-13T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1830139-m-fa334ff4572287f4a2289e488303f6a9.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 13.03.2025 berichtet über die Anwendung von Gemini-KI in Robotern, die Markteinführung von OpenAIs Operator in Deutschland und die erfolgreiche Erstellung eines wissenschaftlichen Papers durch ein KI-System.",
+        "topics": [
+            "Gemini-KI",
+            "OpenAI Operator",
+            "KI-generierte wissenschaftliche Texte"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Smarte Apple-Brillen, Google, Open AI, CoreWeave",
+        "link": "https://kiupdate.podigee.io/426-new-episode",
+        "published": "2025-03-12T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1828600-m-3fc4fbf104104553317e3fe18d233655.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 12.03.2025 berichtet über Apples Entwicklung smarter Brillen, Googles geplante Übernahme eines Eyetracking-Startups und OpenAIs neue Entwicklertools für KI-Agenten.  Zusätzlich werden Milliardeninvestitionen in CoreWeave erwähnt.",
+        "topics": [
+            "Smart Glasses",
+            "KI-Entwicklungstools",
+            "Investitionen in KI-Infrastruktur"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Talk unter KIs, KI-Songkopien, Neutronensterne lokalisieren",
+        "link": "https://kiupdate.podigee.io/425-new-episode",
+        "published": "2025-03-11T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1827220-m-884c42c6eec811f3a26024b544a9a002.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 11.03.2025 berichtet über neue Entwicklungen im Bereich der KI: eine neue Sprache für die Kommunikation zwischen KIs, das Entfernen von über 75.000 KI-generierten Songs durch Sony Music und die Nutzung von KI zur Lokalisierung von Neutronensternen.  Zusätzlich wird für heise KI PRO geworben.",
+        "topics": [
+            "KI-Kommunikation",
+            "KI-generierte Musik",
+            "KI in der Astronomie"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: \"Freedom Cities\", KI als Automatenmanager und: bei McDonald's",
+        "link": "https://kiupdate.podigee.io/424-new-episode",
+        "published": "2025-03-10T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1825642-m-f88a0daf04d40922f77b76bdbe309eac.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 10.03.2025 behandelt die Vision von \"Freedom Cities\", den Einsatz von KI zur Automatisierung und die Integration von KI-Funktionen bei McDonald's.  Zusätzlich wird heise KI PRO beworben, welches bis zum 28.02.2025 zum Aktionspreis erhältlich ist.",
+        "topics": [
+            "Freedom Cities",
+            "KI-Automatisierung",
+            "KI im Einsatz bei McDonald's"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Hardware-Engpässe und Machtspiele auf dem KI-Markt",
+        "link": "https://kiupdate.podigee.io/423-07-03-2025",
+        "published": "2025-03-07T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1822161-m-08f30d45c392b166966336629abce915.mp3?source=feed",
+        "summary_ai": "Der Podcast diskutiert die Auswirkungen amerikanischer Exportbeschränkungen auf den europäischen KI-Markt, beleuchtet das Projekt Stargate und analysiert den Wettbewerb zwischen Nvidia und AMD im KI-Bereich.",
+        "topics": [
+            "KI-Markt",
+            "Exportbeschränkungen",
+            "Nvidia vs. AMD"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: AI Overviews, Turing Award, Militärische Drohnen, KI-Skepsis",
+        "link": "https://kiupdate.podigee.io/422-new-episode",
+        "published": "2025-03-06T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1819971-m-f1818304f8885a2f1b35468faf40c917.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 06.03.2025 berichtet über Googles neue KI-Modelle, den Turing Award für Reinforcement Learning, den Einsatz von KI in militärischen Drohnen und wachsende KI-Skepsis bei Jugendlichen.",
+        "topics": [
+            "KI-Modelle",
+            "Turing Award",
+            "Militärische KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Opera, TSMC, DeepL Clarify, Musk vs. OpenAI",
+        "link": "https://kiupdate.podigee.io/421-05-03-2025",
+        "published": "2025-03-05T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1818014-m-78940206325b321328f9e9c560db96b7.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 05.03.2025 berichtet über neue KI-Integrationen im Opera-Browser, die massive Ausweitung der Chipproduktion durch TSMC und DeepLs neue Klärfunkion.  Zusätzlich wurde ein Eilantrag gegen OpenAIs Umstrukturierung abgewiesen.",
+        "topics": [
+            "KI-Integrationen",
+            "Chipproduktion",
+            "OpenAI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: KI auf dem MWC, Europol, Intel Foundry, 60-Stunden-Woche",
+        "link": "https://kiupdate.podigee.io/420-04-03-2025",
+        "published": "2025-03-04T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1816342-m-f8f800c34db2970852f28d332a2ad0a1.mp3?source=feed",
+        "summary_ai": "Der Mobile World Congress fokussierte auf KI, Europol bekämpfte KI-generierte Kinderpornographie, und Intel testete neue Foundry-Prozesse.  Zusätzlich wurde die Forderung nach einer 60-Stunden-Arbeitswoche diskutiert.",
+        "topics": [
+            "KI auf dem MWC",
+            "KI-generierte Kinderpornographie",
+            "Intel Foundry"
+        ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP025 - Reden mit dem Microsoft 365 Copilot",
+        "link": "https://podcast.yourcopilot.de/episode/ycp025-reden-mit-dem-microsoft-365-copilot",
+        "published": "2025-03-04T12:15:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/b1fe4ecc.mp3?t=1741087553",
+        "summary_ai": "Der Podcast YCP025 behandelt neue Microsoft 365 Copilot-Features: Spracheingabe für effizientere Nutzung und KI-gestützten Zugriff auf Unternehmenswissen in OneDrive und SharePoint.  Zusätzlich wird der SharePoint Hackathon vorgestellt.",
+        "topics": [
+            "Microsoft 365 Copilot",
+            "KI-gestützte Wissensnutzung",
+            "SharePoint Hackathon"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Gemini Live, Open AI, China warnt vor USA, Roboter",
+        "link": "https://kiupdate.podigee.io/419-new-episode",
+        "published": "2025-03-03T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1814168-m-d0814c34b1eb4b5fe5ed2cda46dbdc8d.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 25.02.2025 berichtet über zwei Gemini Live-Updates, Chinas Warnung vor US-Reisen für KI-Experten und Figure AIs Haushaltsrobotertests.  Microsoft bietet \"Voice\" und \"Think Deeper\" kostenlos an.",
+        "topics": [
+            "Gemini Live",
+            "China-USA KI-Konflikt",
+            "Robotertechnologie"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: KI optimiert Flugzeugabfertigung am Frankfurter Flughafen",
+        "link": "https://kiupdate.podigee.io/418-28-02-2025",
+        "published": "2025-02-28T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1811077-m-918157d260d933f4ca687a87bf8576e9.mp3?source=feed",
+        "summary_ai": "Am Frankfurter Flughafen optimiert ein KI-System namens IDA die Flugzeugabfertigung.  IDA analysiert Echtzeitdaten, um Aufgaben effizient zuzuweisen und die Flughafen-Disponenten zu entlasten.",
+        "topics": [
+            "KI",
+            "Flughafenabfertigung",
+            "Optimierung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Nvidia, Grok-3, Alibaba Wan2.1, Call of Duty",
+        "link": "https://kiupdate.podigee.io/417-27-02-2025",
+        "published": "2025-02-27T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1809866-m-6e9aca008f1b6468418fde628ed9447c.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 27.02.2025 berichtet über Nvidias hohen Jahresgewinn im Vergleich zu AMD, Alibabas Open-Source-Veröffentlichung von Video-KI-Modellen und Grok 3's Sprachmodus für Verschwörungstheorien, sowie die Nutzung generativer KI in \"Call of Duty\".",
+        "topics": [
+            "Nvidia",
+            "Open-Source KI",
+            "Generative KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Perplexity Comet, ChatGPT, Wettervorhersage, Stimmgesundheit",
+        "link": "https://kiupdate.podigee.io/416-26-02-2025",
+        "published": "2025-02-26T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1808137-m-f6bc2ac234fdba5387892c64e04b6c3d.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 26.02.2025 umfasst die Ankündigung des Browsers Perplexity Comet, verbesserte Deep Research-Funktionen von ChatGPT und KI-Anwendungen in der Wettervorhersage und Stimmgesundheit.  Es werden Entwicklungen in verschiedenen KI-Bereichen vorgestellt.",
+        "topics": [
+            "Perplexity Comet",
+            "ChatGPT Deep Research",
+            "KI in der Medizin/Gesundheit"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: AI Overviews, KI in der Medizin, Anthropic, Affinity",
+        "link": "https://kiupdate.podigee.io/415-25-02-2025",
+        "published": "2025-02-25T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1806681-m-b52a116c22ad2571aecd7964dbaef333.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 25.02.2025 behandelt aktuelle Entwicklungen im Bereich KI, darunter eine Klage gegen Google,  medizinische KI-Anwendungen und neue Versionen von KI-Modellen wie Claude 3.7 von Anthropic.",
+        "topics": [
+            "KI-Rechtliche Auseinandersetzungen",
+            "KI in der Medizin",
+            "KI-Modellentwicklung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Silicon Valley, Apple Intelligence, OpenAI, InsightPersona",
+        "link": "https://kiupdate.podigee.io/414-24-02-2025",
+        "published": "2025-02-24T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1805130-m-8521c5906f0cb4db021f48e7cb36f85b.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 24.02.2025 behandelt kritische Themen wie die mögliche Fehlentwicklung des Silicon Valley, Apples Deutschland-Start mit Apple Intelligence und OpenAIs geplante Änderung der Rechenleistungspartner.  Zusätzlich wird die Software InsightPersona für genauere Analysen im Politik- und Medienbereich vorgestellt.",
+        "topics": [
+            "Silicon Valley",
+            "Apple Intelligence",
+            "OpenAI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Chinas KI-Sprachmodell DeepSeek – Hype oder Hoffnung?",
+        "link": "https://kiupdate.podigee.io/413-21-02-2025",
+        "published": "2025-02-21T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1801931-m-ad92dd46212b1f5af0020677110209c7.mp3?source=feed",
+        "summary_ai": "Der Podcast \"KI-Update Deep-Dive\" diskutiert Chinas KI-Sprachmodell DeepSeek, wobei sowohl positive Aspekte wie sparsamer Ressourcenverbrauch als auch Bedenken hinsichtlich der Nähe zur chinesischen Regierung und fehlender Regulierung hervorgehoben werden.  Expertenanalysen von heise-Redakteuren bieten Einblicke in die praktischen Erfahrungen mit DeepSeek.",
+        "topics": [
+            "DeepSeek",
+            "Chinesische KI",
+            "KI-Regulierung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt:OpenAI, Microsofts Muse, Apple Intelligence, Geisternetze",
+        "link": "https://kiupdate.podigee.io/412-20-02-2025",
+        "published": "2025-02-20T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1800736-m-8c135436d098b4c4309debfa4064fee3.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 20.02.2025 berichtet über OpenAIs KI-Softwareentwicklung, Microsofts KI-gestützten 3D-Generator \"Muse\" für Gaming und Apples neue KI-Funktion \"Apple Intelligence\" im iPhone 16e.  Darüber hinaus wird der Einsatz von KI zur Ortung von Geisternetzen durch den WWF erwähnt.",
+        "topics": [
+            "KI-Softwareentwicklung",
+            "KI im Gaming",
+            "KI-Anwendungen im Umweltschutz"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Thinking Machines Lab, Meta, Open AI, AI Vision",
+        "link": "https://kiupdate.podigee.io/411-19-02-2025",
+        "published": "2025-02-19T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1799094-m-55cd155b17d75de835826e3fb1f23cef.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 19.02.2025 berichtet über neue Entwicklungen im KI-Bereich, darunter die Veröffentlichung von Grok 3 durch xAI, vereinfachte KI-Agenten und ein KI-Sprachmodell für kulturelle Nuancen.  Darüber hinaus wird der Einsatz von Machine Learning im Küstenschutz beleuchtet.",
+        "topics": [
+            "KI-Entwicklungen",
+            "KI-Sprachmodelle",
+            "Machine Learning im Küstenschutz"
+        ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP024 - 1 Jahr Yourcopilot Podcast",
+        "link": "https://podcast.yourcopilot.de/episode/ycp024-1-jahr-yourcopilot-podcast",
+        "published": "2025-02-18T14:30:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/9d628384.mp3?t=1739888220",
+        "summary_ai": "Der Yourcopilot Podcast feiert sein einjähriges Bestehen und der SharePointPodcast sein 20-jähriges Jubiläum.  Es gab dazu einen Talk im Gezielt Reichweitenpodcast und einen Livestream.",
+        "topics": [
+            "Yourcopilot Podcast",
+            "SharePointPodcast",
+            "Podcast-Jubiläum"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Grok 3, KI-Agenten, Mistrals Saba, Küstenschutz",
+        "link": "https://kiupdate.podigee.io/410-18-02-2025",
+        "published": "2025-02-18T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1797623-m-4703687c039efdf73b2c1b8e652d1e72.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 18.02.2025 behandelt die Veröffentlichung von Grok 3 durch xAI,  die einfache Überlistung von KI-Agenten und die Anwendung von Machine Learning im Küstenschutz.",
+        "topics": [
+            "Grok 3",
+            "KI-Agenten",
+            "Küstenschutz"
+        ]
+    },
+    {
+        "source": "KI>Inside",
+        "title": "AI-H.A.B.I.Ts – 5 Gewohnheiten für Organisationen, die KI erfolgreich nutzen wollen",
+        "link": "https://podcasters.spotify.com/pod/show/leftshift-one/episodes/AI-H-A-B-I-Ts--5-Gewohnheiten-fr-Organisationen--die-KI-erfolgreich-nutzen-wollen-e2v1krq",
+        "published": "2025-02-18T08:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://anchor.fm/s/fb4ad23c/podcast/play/98668858/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-1-18%2F395089029-44100-2-1ebb2db435c9c.mp3",
+        "summary_ai": "Der Podcast beschreibt fünf KI-Gewohnheiten (AI-H.A.B.I.Ts) für Unternehmenserfolg: Daten als Werttreiber nutzen, Mitarbeiter einbeziehen und Herausforderungen meistern.  Gewohnheiten werden als Schlüssel für die erfolgreiche KI-Implementierung hervorgehoben.",
+        "topics": [
+            "KI-Implementierung",
+            "Unternehmenserfolg",
+            "Mitarbeiterintegration"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: OpenAI, Perplexity, Adobe Firefly, DeepSeek",
+        "link": "https://kiupdate.podigee.io/409-17-02-2025",
+        "published": "2025-02-17T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1796260-m-42d946c9fa39588594cbd7b8a2b658cf.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 17.02.2025 berichtet über OpenAIs Bestreben nach mehr \"intellektueller Freiheit\" für ChatGPT, neue Funktionen von Perplexity und Adobe Firefly (Videoerstellung), sowie ein Verbot von DeepSeek in Südkorea.",
+        "topics": [
+            "OpenAI",
+            "KI-Regulierung",
+            "KI-Bild- und Video-Generierung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Zoom und die KI-Fähigkeit zur Übersetzung",
+        "link": "https://kiupdate.podigee.io/408-14-02-2025",
+        "published": "2025-02-14T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1790827-m-671472859d2b923768bcbb46e5af4b22.mp3?source=feed",
+        "summary_ai": "Der Heise-Artikel beschreibt die zunehmende Integration von KI in Zoom, insbesondere im Bereich der Simultanübersetzung.  Sebastian Stüker, Sprachforscher bei Zoom, erläutert die Fortschritte und verbleibenden Herausforderungen dieser Technologie.",
+        "topics": [
+            "KI in Zoom",
+            "Simultanübersetzung",
+            "Künstliche Intelligenz im Arbeitsumfeld"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: OpenAIs GPT 4.5, Jugendschutz, YouTube, KI-Regulierung",
+        "link": "https://kiupdate.podigee.io/407-13-02-2025",
+        "published": "2025-02-13T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1790825-m-ecd4ba6ee21a3d28fba46ae13cc880f2.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 13.02.2025 behandelt die baldige Veröffentlichung von GPT-4.5 und GPT-5,  Googles Jugendschutzmaßnahmen für KI und die Forderungen nach KI-Regulierung nach einem viralen KI-Video mit Scarlett Johansson.",
+        "topics": [
+            "GPT-4.5/GPT-5",
+            "KI-Jugendschutz",
+            "KI-Regulierung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Didacta 2025; Safe Superintelligence, GitHub, KI-Kunst",
+        "link": "https://kiupdate.podigee.io/406-12-02-2025",
+        "published": "2025-02-12T14:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1789213-m-c39d053d60df81a611062501eb3c37eb.mp3?source=feed",
+        "summary_ai": "Der KI-Update-Podcast vom 12.02.2025 behandelt die Themen KI auf der Didacta 2025, ein vielversprechendes Superintelligenz-Startup und den neuen Copilot Agent Mode von Github, sowie die Kritik an einer KI-Kunst-Auktion.",
+        "topics": [
+            "KI in der Bildung",
+            "Superintelligenz",
+            "KI-Kunst"
+        ]
     }
 ]
