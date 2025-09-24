@@ -453,5 +453,565 @@
             "Meta und rechte Influencer",
             "KI-Ethik und Sicherheit"
         ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Wahn, Abhören, BND, Reddit und Crawler, KI am BER, Gold für OpenAI",
+        "link": "https://kiupdate.podigee.io/508-new-episode",
+        "published": "2025-08-13T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2062248-m-54843e61958d10acfeff93630cb915d3.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 13.08.2025 behandelt Themen wie den Einfluss von Chatbots auf Wahnvorstellungen, den Einsatz von KI zum Abhören von Mobiltelefonen und den Widerstand von Reddit gegen KI-Crawler.  Zusätzlich werden der Einsatz von KI am BER Flughafen und der Gewinn einer Goldmedaille durch OpenAI erwähnt.",
+        "topics": [
+            "KI-Missbrauch",
+            "KI-Überwachung",
+            "KI-Ethik"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Copyright-Klagen, US-Chip-Exporte, KI-Schwachstellen, Aus für Dojo",
+        "link": "https://kiupdate.podigee.io/507-new-episode",
+        "published": "2025-08-11T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2058720-m-c8e7c3a435cacfb126618b7019ba9b52.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 11.08.2025 berichtet über drohende Copyright-Klagen gegen KI-Unternehmen, geplante US-Chip-Exporte nach China und aufgedeckte Schwachstellen in KI-Systemen.  Darüber hinaus wurde das Tesla-Projekt Dojo eingestellt.",
+        "topics": [
+            "Copyright-Klagen",
+            "KI-Chips/US-Exportpolitik",
+            "KI-Schwachstellen"
+        ]
+    },
+    {
+        "source": "KI Inside",
+        "title": "Inside KI: Hilfe, mein Kind spricht mit ChatGPT! – KI in der Schule & Familie",
+        "link": "https://agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_4_-_Hilfe-_mein_Kind_spricht_mit_ChatGPT_---_KI_in_der_Schule_-_Familie_(Audio)_V2.mp3",
+        "published": "2025-08-09T15:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://main.podcast-hosting.org/agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_4_-_Hilfe-_mein_Kind_spricht_mit_ChatGPT_---_KI_in_der_Schule_-_Familie_(Audio)_V2.mp3?awCollectionId=at-f38cz&awEpisodeId=at-f38cz-81550dd4d3a18631c31b3f413319dd02fb658e64&origin=feed&v=1757092511",
+        "summary_ai": "Der Podcast behandelt den Einfluss von KI, insbesondere ChatGPT, auf Kinder im Schul- und Familienalltag.  Es werden Chancen und Risiken der KI-Nutzung diskutiert und praktische Tipps für Eltern und Lehrer zur Medienkompetenz vermittelt.",
+        "topics": [
+            "KI im Bildungskontext",
+            "Ethik der KI-Nutzung durch Kinder",
+            "Medienkompetenz und  -erziehung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: ChatGPT-5, KI-Übersetzer, KI und Unis, KI-Schuld, Nvidia und China",
+        "link": "https://kiupdate.podigee.io/506-new-episode",
+        "published": "2025-08-08T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2055338-m-984e63b139d944459f22738fe1a91ba3.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 08.08.2025 behandelt die Veröffentlichung von ChatGPT-5, den Einsatz von KI an Universitäten und die Reaktion von Nvidia auf den chinesischen Markt.  Es werden zudem KI-Übersetzer und die Frage der KI-Schuld angesprochen.",
+        "topics": [
+            "ChatGPT-5",
+            "KI an Universitäten",
+            "Nvidia und China"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Neue OpenAI-Modelle, KI am Schachbrett, AI-Slop, Genie 3, KI-Hasen",
+        "link": "https://kiupdate.podigee.io/505-new-episode",
+        "published": "2025-08-06T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2051911-m-d633d72d30a7368d843b42b2e052f5b0.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 06.08.2025 berichtet über neue OpenAI-Modelle, einen KI-Schachwettbewerb und die Löschung von AI-Slop auf Wikipedia.",
+        "topics": [
+            "OpenAI Modelle",
+            "KI-Schach",
+            "AI-Slop"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: KI-Persönlichkeit, ChatGPT, Supercomputer mit Wasserkraft, Fische",
+        "link": "https://kiupdate.podigee.io/504-new-episode",
+        "published": "2025-08-04T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2048071-m-3eb3b2864ee83962639e00d7ed8c3b97.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 04.08.2025 behandelt die Themen KI-Verhaltensüberwachung, öffentliche ChatGPT-Chats und einen neuen, wasserkraftbetriebenen Supercomputer in Norwegen.  Zusätzlich wird über den Einsatz von Robotern zur humaneren Tötung von Fischen berichtet.",
+        "topics": [
+            "KI-Verhaltensüberwachung",
+            "ChatGPT",
+            "Wasserkraft-Supercomputer"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: EU AI Act, Meta-Umsätze und Überläufer von Apple, Nvidia",
+        "link": "https://kiupdate.podigee.io/503-new-episode",
+        "published": "2025-08-01T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2044508-m-acc1f76ffdbfe8c82fee7a295bac5a65.mp3?source=feed",
+        "summary_ai": "Der EU-AI-Act schreitet voran, Meta verzeichnet Umsatzsteigerungen, während Apples KI-Team Mitarbeiter verliert und Nvidia sich in China rechtfertigen muss.",
+        "topics": [
+            "EU-AI-Act",
+            "Meta-Umsätze",
+            "KI-Mitarbeiter-Fluktuation"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Erdbeben-KI, Study Mode für ChatGPT, KI-Modell für Antike, Apple",
+        "link": "https://kiupdate.podigee.io/502-new-episode",
+        "published": "2025-07-30T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2039617-m-7b764f4b255786e01296030a66dcbcb6.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 30.07.2025 berichtet über das Scheitern von Googles Erdbeben-KI in der Türkei, die Einführung des \"Study Mode\" für ChatGPT und ein KI-Modell zur Analyse lateinischer Inschriften.",
+        "topics": [
+            "Erdbeben-KI",
+            "ChatGPT Study Mode",
+            "KI für antike Sprachen"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: GPT-5, Google-Shopping, Bias in der KI, Unitree R1",
+        "link": "https://kiupdate.podigee.io/501-new-episode",
+        "published": "2025-07-28T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2037292-m-ad54e5f10fbffe4a313ac909ef73199b.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 28. Juli 2025 behandelt die Planung von GPT-5 durch OpenAI, neue KI-Funktionen in Google Shopping und den anhaltenden Bias in KI-Systemen.  Zusätzlich wird ein neuer erschwinglicher humanoider Roboter vorgestellt.",
+        "topics": [
+            "GPT-5",
+            "KI-Bias",
+            "Humanoider Roboter"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Trumps AI-Plan, Google, KI am Fraport, Chatbot mit Datenschutz",
+        "link": "https://kiupdate.podigee.io/500-new-episode",
+        "published": "2025-07-25T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2033710-m-b93f7852418acbf19e40bf8b1eec6f10.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 25.07.2025 behandelt Trumps KI-Plan, Googles Verteidigung KI-generierter Inhalte und den Einsatz datenschutzfreundlicher KI-Systeme, beispielsweise am Flughafen Frankfurt und in der Schweiz.",
+        "topics": [
+            "KI-Regulierung",
+            "KI-Ethik",
+            "Datenschutz"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Deepl Voice, Gemini 2.5, Bau neuer KI-Zentren, Veo 3, Anthropic",
+        "link": "https://kiupdate.podigee.io/499-new-episode",
+        "published": "2025-07-23T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2030058-m-30a9535c0699f21d6819abcdc8c6d1c2.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 23.07.2025 berichtet über neue Entwicklungen bei DeepL Voice, Gemini 2.5 (verbessertes Bildverständnis) und den Bau neuer KI-Rechenzentren, wobei auch Kompromisse mit autoritären Geldgebern thematisiert werden.",
+        "topics": [
+            "DeepL Voice",
+            "Gemini 2.5",
+            "KI-Rechenzentren"
+        ]
+    },
+    {
+        "source": "KI Inside",
+        "title": "Inside KI: KI & Job – Wer arbeitet morgen noch?",
+        "link": "https://agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_3_-_KI_-_Job_---_Wer_arbeitet_morgen_noch_(Audio)_V2.mp3",
+        "published": "2025-07-23T09:19:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://main.podcast-hosting.org/agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_3_-_KI_-_Job_---_Wer_arbeitet_morgen_noch_(Audio)_V2.mp3?awCollectionId=at-f38cz&awEpisodeId=at-f38cz-ddba123331faf8739da58be72aa04c56e1898b76&origin=feed&v=1757092511",
+        "summary_ai": "Der Podcast \"Inside KI\" diskutiert den Einfluss von Künstlicher Intelligenz auf den Arbeitsmarkt, beleuchtet sowohl automatisierte Tätigkeiten als auch Tätigkeitsbereiche, die menschliche Fähigkeiten erfordern, und gibt Tipps zur Zukunftsvorsorge.",
+        "topics": [
+            "Künstliche Intelligenz und Arbeit",
+            "Automatisierung",
+            "Zukunft der Arbeit"
+        ]
+    },
+    {
+        "source": "KI Inside",
+        "title": "Inside KI: Kann KI lügen? – Deepfakes, Chatbots und die Wahrheit im digitalen Zeitalter",
+        "link": "https://agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_2_-_Kann_KI_luegen_---_Deepfakes-_Chatbots_und_die_Wahrheit_im_digitalen_Zeitalter_(Audio)_V2.mp3",
+        "published": "2025-07-21T13:22:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://main.podcast-hosting.org/agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_2_-_Kann_KI_luegen_---_Deepfakes-_Chatbots_und_die_Wahrheit_im_digitalen_Zeitalter_(Audio)_V2.mp3?awCollectionId=at-f38cz&awEpisodeId=at-f38cz-37bfc9ccf26015781994783ab4311990a18e2195&origin=feed&v=1757092511",
+        "summary_ai": "Der Podcast \"Inside KI\" diskutiert die Herausforderungen von KI-generierten Fakes wie Deepfakes und Chatbots, die falsche Informationen verbreiten.  Die Folge beleuchtet die Erstellung von Fakes, deren Einfluss auf Medien und Wahrnehmung und gibt Tipps zur Erkennung.",
+        "topics": [
+            "Deepfakes",
+            "KI-Chatbots",
+            "Desinformation"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: ChatGPT Agent, Meta vs. AI Act, Mathe-Olympiade, MLX",
+        "link": "https://kiupdate.podigee.io/498-21-07-2025",
+        "published": "2025-07-21T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2026784-m-a19c7732869e277bb04f3595897f0ce3.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 21.07.2025 berichtet über Sam Altmans Warnung vor ChatGPT Agent, Metas Widerstand gegen den EU AI Act und OpenAIs Erfolg bei einer Mathe-Olympiade.  Zusätzlich wird das Apple KI-Framework MLX erwähnt.",
+        "topics": [
+            "ChatGPT Agent",
+            "EU AI Act",
+            "Mathe-Olympiade"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Der wahre Preis einer KI-Anfrage",
+        "link": "https://kiupdate.podigee.io/497-18-07-2025",
+        "published": "2025-07-18T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2019892-m-a1f52bb19decf4f349f4054f36b06f2f.mp3?source=feed",
+        "summary_ai": "Eine Studie von Maximilian Dauner untersucht den Energieverbrauch generativer KI-Chatbots, der deutlich höher als bei herkömmlichen Suchanfragen sein kann.  Die Forschung quantifiziert den bisher weitgehend unbekannten Energiebedarf pro Anfrage.",
+        "topics": [
+            "Energieverbrauch KI",
+            "Generative KI",
+            "Chatbot-Energieeffizienz"
+        ]
+    },
+    {
+        "source": "KI Inside",
+        "title": "Inside KI: Was ist eigentlich KI – und warum redet plötzlich jeder darüber?",
+        "link": "https://agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_1_-_Was_ist_eigentlich_KI_-_und_warum_redet_ploetzlich_jeder_darueber_(Audio)_V5.mp3",
+        "published": "2025-07-17T11:12:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://main.podcast-hosting.org/agidomedia.podcaster.de/insideki/media/Inside_KI_-_Folge_1_-_Was_ist_eigentlich_KI_-_und_warum_redet_ploetzlich_jeder_darueber_(Audio)_V5.mp3?awCollectionId=at-f38cz&awEpisodeId=at-f38cz-bcd010535c65f180b6a05842977329f2c7e372a4&origin=feed&v=1757092511",
+        "summary_ai": "Die Podcast-Folge \"Inside KI\" erklärt verständlich das Konzept der Künstlichen Intelligenz (KI) und den aktuellen Hype darum.  Sie beleuchtet den alltäglichen Einsatz von KI, die Gründe für den Hype um Technologien wie ChatGPT und die damit verbundenen Chancen und Risiken.",
+        "topics": [
+            "Künstliche Intelligenz",
+            "ChatGPT",
+            "KI im Alltag"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: WeTransfer, Nivdia, Conni-Memes, Unkraut-Roboter",
+        "link": "https://kiupdate.podigee.io/496-16-07-2025",
+        "published": "2025-07-16T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2017395-m-bf78ed46539388f0150ece7d3c40e6bd.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 16.07.2025 behandelt WeTransfers umstrittene Datenrechte, die Wiederaufnahme von Nvidia-Chiplieferungen nach China und den Einsatz eines solarbetriebenen KI-Roboters zur Unkrautbekämpfung.  Zusätzlich wird die kontroverse Verwendung des Conni-Motivs in KI-Zusammenhängen thematisiert.",
+        "topics": [
+            "KI-Regulierung",
+            "Nvidia",
+            "KI-Robotik"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Tech-Riesen auf Einkaufstour, OpenAI, Therapie-Chatbots, Kimi",
+        "link": "https://kiupdate.podigee.io/495-14-07-2025",
+        "published": "2025-07-14T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2013948-m-58ec5ab2f2bd421d80b252b86186443c.mp3?source=feed",
+        "summary_ai": "Tech-Unternehmen investieren stark in KI, wie die Akquisitionen von Google und Meta zeigen.  Gleichzeitig gibt es Bedenken hinsichtlich der Zuverlässigkeit von KI-Anwendungen, besonders im Bereich Therapie-Chatbots.",
+        "topics": [
+            "KI-Investitionen",
+            "OpenAI",
+            "Therapie-Chatbots"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Code of Practice, Alignment Faking, SAG-AFTRA, Drohnenprüfung",
+        "link": "https://kiupdate.podigee.io/494-11-07-2025",
+        "published": "2025-07-11T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2011096-m-5ec91791dbe8d4df95e312c73a133738.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 11.07.2025 behandelt neue Entwicklungen im Bereich KI, darunter die Vorstellung eines Verhaltenskodex für generative KI-Modelle, eine Studie zu KI-Alignment und den Schutz von US-Synchronsprechern vor KI.",
+        "topics": [
+            "Verhaltenskodex für KI",
+            "KI-Alignment",
+            "Schutz von Synchronsprechern"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Grok, Baustellenunfälle, Bias, vergiftete KI",
+        "link": "https://kiupdate.podigee.io/493-09-07-2025",
+        "published": "2025-07-09T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2007568-m-2fb667de2daf73f1a25c2efe28ba9655.mp3?source=feed",
+        "summary_ai": "Der KI-Podcast vom 09.07.2025 behandelt den Antisemitismus von Grok, die Anwendung von KI zur Unfallvermeidung auf Baustellen und geschlechtsspezifische Verzerrungen bei Gehaltsprognosen durch Sprachmodelle.",
+        "topics": [
+            "KI-Bias",
+            "Grok",
+            "Baustellenunfälle"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Datenschutz, CatAttack, Meta-Emitter, Peer-Review",
+        "link": "https://kiupdate.podigee.io/492-07-07-2025",
+        "published": "2025-07-07T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/2004987-m-b46193552def23e86eb4dd19327bef26.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 07.07.2025 befasst sich mit dem Datenschutz bei LLMs, der Fehlinterpretation harmloser Sätze durch KI und der Entwicklung von KI-basierten Meta-Emittern für kühlere Häuser.  Zusätzlich wurden versteckte KI-Prompts in Fachartikeln aufgedeckt.",
+        "topics": [
+            "Datenschutz",
+            "KI-Fehlinterpretation",
+            "Meta-Emitter"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Wie steht es um den AI Act?",
+        "link": "https://kiupdate.podigee.io/491-04-07-2025",
+        "published": "2025-07-04T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1999601-m-ae32c57fb0b5cd4090beacf3fa34a4cf.mp3?source=feed",
+        "summary_ai": "Der Podcast \"KI-Update Deep-Dive\" befasst sich mit dem aktuellen Stand des EU AI Acts und der anhaltenden Kritik an dessen möglicher Überregulierung und Innovationshemmung.  Eine Digitalpolitische Beraterin des EU-Parlaments erläutert die Sachlage und die Umsetzung des Gesetzes in den Mitgliedsstaaten.",
+        "topics": [
+            "EU AI Act",
+            "Überregulierung",
+            "Innovation"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: ChatEurope, KI in Schulen, Medizinische KI, Meta-Gehälter, OpenAI",
+        "link": "https://kiupdate.podigee.io/490-new-episode",
+        "published": "2025-07-02T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1997957-m-62b8f41ea9a99f55c62eefba9e12e1be.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 02.07.2025 behandelt kontroverse Themen wie fehlerhafte KI-Nachrichtenbots (ChatEurope), den uneinheitlichen Umgang mit KI in Schulen und den Einsatz von KI in der Medizin.  Zusätzlich werden die Abwerbung von OpenAI-Mitarbeitern durch Meta und der geplante Einsatz von KI für Community Notes von X thematisiert.",
+        "topics": [
+            "KI in der Bildung",
+            "Medizinische KI",
+            "KI-Ethik und -Sicherheit"
+        ]
+    },
+    {
+        "source": "KI>Inside",
+        "title": "WIE DU EIN PROFITABLES KI-STARTUP AUFBAUST",
+        "link": "https://podcasters.spotify.com/pod/show/leftshift-one/episodes/WIE-DU-EIN-PROFITABLES-KI-STARTUP-AUFBAUST-e34oh7c",
+        "published": "2025-07-01T10:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://anchor.fm/s/fb4ad23c/podcast/play/104661676/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-26%2F402838704-44100-2-3d583083e72ac.mp3",
+        "summary_ai": "Der Podcast diskutiert den Aufbau profitabler KI-Startups im DACH-Raum, beleuchtet Unterschiede zwischen KI und klassischer Software und identifiziert vielversprechende Branchen und Finanzierungswege.",
+        "topics": [
+            "KI-Startups",
+            "KI-Geschäftsmodelle",
+            "Finanzierung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: KI-Crawler als Bedrohung, KI-Stromhunger und -Emissionen, KI-Agenten",
+        "link": "https://kiupdate.podigee.io/489-new-episode",
+        "published": "2025-06-30T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1994165-m-712c31e21f972dc73202f1ac6ce95f8f.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 30.06.2025 befasst sich mit den Gefahren von KI-Crawlern, dem hohen Energieverbrauch und den Emissionen von KI-Systemen sowie der Analyse aktueller KI-Agenten.",
+        "topics": [
+            "KI-Crawler",
+            "KI-Energieverbrauch & Emissionen",
+            "KI-Agenten"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Microsoft vs OpenAI, Meta, kritische Infrastuktur, Sprache",
+        "link": "https://kiupdate.podigee.io/488-27-06-2025",
+        "published": "2025-06-27T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1988298-m-a8892233b43a57608f8e52fb497cee33.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 27.06.2025 behandelt den Machtkampf zwischen Microsoft und OpenAI, Metas Gerichtssieg gegen Autoren und den Einfluss von KI auf kritische Infrastruktur und menschliche Sprache.  Die zunehmende Angleichung menschlicher Sprache an KI-Muster wird ebenfalls thematisiert.",
+        "topics": [
+            "KI-Wettbewerb",
+            "KI und Recht",
+            "KI und Gesellschaft"
+        ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP032 - Recherche Agent - hier kommt der Faktencheck",
+        "link": "https://podcast.yourcopilot.de/episode/ycp032-recherche-agent-hier-kommt-der-faktencheck",
+        "published": "2025-06-27T05:30:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/ff3f9977.mp3?t=1750941967",
+        "summary_ai": "Der Podcast beschreibt ein Experiment, bei dem der Copilot Research Agent ein 58-seitiges Handbuch in zwei Tagen analysierte.  Die Folge beleuchtet die Zuverlässigkeit und die Ergebnisse dieses KI-gestützten Faktenchecks.",
+        "topics": [
+            "KI",
+            "Copilot Research Agent",
+            "Faktencheck"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: DeepSeek, Standard für KI-Agenten, KI-Brillen, Arbeitsmarkt",
+        "link": "https://kiupdate.podigee.io/487-25-06-2025",
+        "published": "2025-06-25T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1987972-m-e6a9b5bf24f9deecd9b3dc3c4e575375.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 25.06.2025 berichtet über Bedenken bezüglich Datenweitergabe von DeepSeek an chinesische Stellen, die Entwicklung eines offenen Standards für KI-Agenten durch Großkonzerne und Investitionen im Bereich KI-Brillen.  Zusätzlich wird die KI-bedingte Umwälzung des Arbeitsmarktes diskutiert.",
+        "topics": [
+            "DeepSeek",
+            "KI-Agenten Standard",
+            "KI und Arbeitsmarkt"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt:  KI-Gigafactory, Groks Wissen, EmoNet, KI-Musikwettbewerb",
+        "link": "https://kiupdate.podigee.io/486-23-06-2025",
+        "published": "2025-06-23T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1984190-m-a8e2fcb07fed45e8e880540681f399b3.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 23.06.2025 berichtet über den geplanten Bau einer KI-Gigafabrik, Musks Bestreben, mit Grok das gesamte menschliche Wissen zu erfassen, und einen KI-Musikwettbewerb.  Zusätzlich wird die Entwicklung von KI zur Emotionserkennung in Sprache behandelt.",
+        "topics": [
+            "KI-Gigafabrik",
+            "Künstliche Intelligenz",
+            "Emotionserkennung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update Deep-Dive: Videogeneratoren zwischen Hype und holpriger Realität",
+        "link": "https://kiupdate.podigee.io/485-20-06-2025",
+        "published": "2025-06-20T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1976804-m-4f1a22ba2e4ae8ff9444f2883c048099.mp3?source=feed",
+        "summary_ai": "KI-Videogeneratoren erzeugen zwar beeindruckend realistische Videos, doch der c't-Test zeigt, dass die Anwendung in der Praxis oft fehleranfällig und vom erwarteten Ergebnis entfernt ist.  Die Technologie löst gleichzeitig Faszination und Besorgnis in der Unterhaltungsbranche aus, da sie die Arbeitsbedingungen von Künstlern und anderen Kreativen bedroht.",
+        "topics": [
+            "KI-Videogeneratoren",
+            "Künstliche Intelligenz",
+            "Unterhaltungsindustrie"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Neues KI-Modell aus China, Gemini 2.5, Smarte Meta-Brille, KI-Werbung",
+        "link": "https://kiupdate.podigee.io/484-18-06-2025",
+        "published": "2025-06-18T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1976801-m-4ed6f2e8dd07325defc6bd513e8f716a.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 18.06.2025 berichtet über neue Entwicklungen im Bereich der KI, darunter ein chinesisches Open-Source-Modell (MiniMax M1), Googles Gemini 2.5 und eine smarte Meta-Brille.  Darüber hinaus wird die Rolle von KI in der Werbung behandelt.",
+        "topics": [
+            "KI-Modell (MiniMax M1, Gemini 2.5)",
+            "Smarte Brille",
+            "KI-Werbung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Deutsche KI-Infrastruktur, KI soll Büroarbeit ersetzen, KI-Spielzeug",
+        "link": "https://kiupdate.podigee.io/483-new-episode",
+        "published": "2025-06-16T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1974120-m-9190dfdc0d4434159231a473da1c1cce.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 16.06.2025 berichtet über den Ausbau der deutschen KI-Infrastruktur, den Einsatz von KI zur Automatisierung von Büroarbeit und die Entwicklung von KI-Spielzeug.  Zusätzlich wird der neue Audio-Overview-Service von Google erwähnt.",
+        "topics": [
+            "KI-Infrastruktur",
+            "KI-Automatisierung",
+            "KI-Spielzeug"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: V-Jepa-2, Sicherheitslücke in KI-Agent, Hirnfäule, Nvidia",
+        "link": "https://kiupdate.podigee.io/482-13-06-2025",
+        "published": "2025-06-13T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1970748-m-d4cdadd7c1261d8c7343e2324043fe0e.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 13.06.2025 berichtet über Metas Veröffentlichung des KI-Weltmodells V-Jepa 2, eine Sicherheitslücke in Copilot und einen neuen Lernmodus für Anthropics Claude gegen \"Hirnäule\", sowie Nvidias europäische KI-Strategie.",
+        "topics": [
+            "KI-Weltmodell V-Jepa 2",
+            "Sicherheitslücke KI-Agent",
+            "Nvidia KI-Strategie"
+        ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP031 - Wave 2 Deep Dive mit Markus Widl",
+        "link": "https://podcast.yourcopilot.de/episode/ycp031-wave-2-deep-dive-mit-markus-widl",
+        "published": "2025-06-13T12:45:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/69c2c929.mp3?t=1749815566",
+        "summary_ai": "Die Podcastfolge \"YCP031\" behandelt Microsoft Copilot Wave 2, insbesondere den Researcher und Analyst Agenten, und deren Anwendung im Kontext von Wissensorganisation und kreativen Tools.  Es werden Erfahrungen aus der Praxis bei Microsoft und notwendige Kompetenzen für den produktiven KI-Einsatz in Microsoft 365 diskutiert.",
+        "topics": [
+            "Microsoft Copilot Wave 2",
+            "KI im Microsoft 365",
+            "Wissensorganisation"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Meta- und Apple-KI-News, AR-Brille von Snap, EU-KI-Verordnung",
+        "link": "https://kiupdate.podigee.io/481-new-episode",
+        "published": "2025-06-11T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1965839-m-9d964d185191cf296ed116937dfb47f6.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 02.06.2025 berichtet über Metas neues KI-Team, Neuigkeiten zu Apples KI-Aktivitäten, eine neue AR-Brille von Snap und den aktuellen Stand der EU-KI-Verordnung.  Zusätzlich wird ein neuer KI-Newsletter angekündigt.",
+        "topics": [
+            "KI-Entwicklungen",
+            "AR-Technologie",
+            "EU-KI-Regulierung"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update DeepDive: Ein CERN für KI in Europa",
+        "link": "https://kiupdate.podigee.io/480-06-06-2025",
+        "published": "2025-06-06T13:05:34+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1958304-m-07f31a721dc19b77a7dd1e19ff302e2d.mp3?source=feed",
+        "summary_ai": "Der Podcast \"KI-Update DeepDive\" diskutiert mit KI-Experte Dr. Holger Hoos die Chancen europäischer KI-Forschung und Entwicklung und die Vision eines CERN-artigen Forschungszentrums für KI in Europa zur Stärkung der europäischen KI-Kompetenz.",
+        "topics": [
+            "KI-Forschung Europa",
+            "CAIRNE",
+            "CERN für KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: Meta, Law Zero, KI-Musikgeneratoren, Builder.ai",
+        "link": "https://kiupdate.podigee.io/479-04-06-2025",
+        "published": "2025-06-04T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1957808-m-2c98359a1a7547d2311f0b27c1eb60bd.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 04.06.2025 berichtet über Metas KI-basierte Risikoüberprüfung, LawZeros Initiative gegen gefährliche KI und Verhandlungen zwischen Musikfirmen und KI-Unternehmen zur Musiknutzung.  Es wird zudem die Frage nach menschlicher Beteiligung bei der Entwicklung des KI-Chatbots Natasha aufgeworfen.",
+        "topics": [
+            "KI-Risikomanagement",
+            "KI-Ethik",
+            "KI-Musik"
+        ]
+    },
+    {
+        "source": "Your CoPilot",
+        "title": "YCP030 - Trockentipps zu Copilot Wave 2",
+        "link": "https://podcast.yourcopilot.de/episode/ycp030-trockentipps-zu-copilot-wave-2",
+        "published": "2025-06-02T13:35:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://lcdn.letscast.fm/media/podcast/261747cc/episode/14eeecc6.mp3?t=1748870292",
+        "summary_ai": "Dieser Inhalt bietet Trockenübungen zu Microsoft 365 Copilot Wave 2, inklusive Videos, die den neuen Copilot-Funktionsumfang,  sowie erste Eindrücke von Forschern und Analysten vorstellen.",
+        "topics": [
+            "Microsoft 365 Copilot",
+            "Copilot Wave 2",
+            "KI-gestützte Produktivität"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: ChatGPT als \"Super-Assistent\", Ärzte zu KI, Arbeitsplätze und KI",
+        "link": "https://kiupdate.podigee.io/478-new-episode",
+        "published": "2025-06-02T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1954623-m-36ab0971663e3f6665917f43cf813610.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 02.06.2025 behandelt ChatGPTs Einsatz als Super-Assistent, den Einfluss von KI auf die Medizin und die von KI verursachten Arbeitsplatzverluste.  Zusätzlich werden ethische Fragen wie Urheberrechte im Kontext von KI diskutiert.",
+        "topics": [
+            "KI in der Medizin",
+            "ChatGPT",
+            "Arbeitsplatzverluste durch KI"
+        ]
+    },
+    {
+        "source": "Heise KI Update",
+        "title": "KI-Update kompakt: ChatGPT, KI-Gigafactory, Mistral AI, Spatial",
+        "link": "https://kiupdate.podigee.io/477-28-05-2025",
+        "published": "2025-05-28T13:00:00+00:00",
+        "type": "podcast",
+        "audio_url": "https://audio.podigee-cdn.net/1949095-m-e054b40e7c65760f74ec0b852b7c7323.mp3?source=feed",
+        "summary_ai": "Das KI-Update vom 28.05.2025 berichtet über Fortschritte in der KI-Entwicklung, darunter die Integration von ChatGPT in verschiedene Apps, den geplanten Bau eines KI-Rechenzentrums in Deutschland und neue Entwicklungen bei Sprachmodellen und KI mit räumlichem Verständnis.",
+        "topics": [
+            "ChatGPT",
+            "KI-Rechenzentrum",
+            "Sprachmodelle"
+        ]
     }
 ]
